@@ -8,6 +8,7 @@ from openai import OpenAI
 
 import yaml
 from dotenv import load_dotenv
+from dotenv import load_dotenv
 from rich.console import Console
 from rich.logging import RichHandler
 from rich.theme import Theme

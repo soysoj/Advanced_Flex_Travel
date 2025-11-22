@@ -27,6 +27,7 @@ class Swarm:
     def __init__(self):
         pass
     def get_chat_completion(
+<<<<<<< HEAD
             self,
             agent: Agent,
             history: List,
@@ -66,6 +67,105 @@ class Swarm:
                     "stream": stream,
                     "max_tokens": 4096,
                 }
+||||||| constructed merge base
+        self,
+        agent: Agent,
+        history: List,
+        context_variables: dict,
+        model_override: str,
+        stream: bool,
+        debug: bool,
+    ) -> ChatCompletionMessage:
+        context_variables = defaultdict(str, context_variables)
+        instructions = agent.instructions(context_variables) if callable(agent.instructions) else agent.instructions
+        messages = [{"role": "system", "content": instructions}] + history
+        debug_print(debug, "Getting chat completion for...:", messages)
+
+        if agent.api_type == "together":
+            # Together AI parameters
+            create_params = {
+                "model": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                "messages": messages,
+                "temperature": 0.6,
+                "top_p": 0.9,
+                "max_tokens": 4096,
+                "stream": stream,
+            }
+        else:
+            tools = [function_to_json(f) for f in agent.functions]
+            # hide context_variables from model
+            for tool in tools:
+                params = tool["function"]["parameters"]
+                params["properties"].pop(__CTX_VARS_NAME__, None)
+                if __CTX_VARS_NAME__ in params["required"]:
+                    params["required"].remove(__CTX_VARS_NAME__)
+
+            create_params = {
+                "model": model_override or agent.model,
+                "messages": messages,
+                "tools": tools or None,
+                "tool_choice": agent.tool_choice,
+                "stream": stream,
+                "max_tokens": 4096,
+            }
+
+            if tools:
+                create_params["parallel_tool_calls"] = agent.parallel_tool_calls
+            
+        # import json
+        # import pdb; pdb.set_trace()
+        # print("Messages payload:", json.dumps(create_params["messages"], indent=2))
+=======
+        self,
+        agent: Agent,
+        history: List,
+        context_variables: dict,
+        model_override: str,
+        stream: bool,
+        debug: bool,
+    ) -> ChatCompletionMessage:
+        context_variables = defaultdict(str, context_variables)
+        instructions = agent.instructions(context_variables) if callable(agent.instructions) else agent.instructions
+        messages = [{"role": "system", "content": instructions}] + history
+        debug_print(debug, "Getting chat completion for...:", messages)
+
+        if agent.api_type == "together":
+            # Together AI parameters
+            create_params = {
+                "model": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+                "messages": messages,
+                "temperature": 0.6,
+                "top_p": 0.9,
+                "max_tokens": 4096,
+                "stream": stream,
+            }
+        else:
+            tools = [function_to_json(f) for f in agent.functions]
+            # hide context_variables from model
+            for tool in tools:
+                params = tool["function"]["parameters"]
+                params["properties"].pop(__CTX_VARS_NAME__, None)
+                if __CTX_VARS_NAME__ in params["required"]:
+                    params["required"].remove(__CTX_VARS_NAME__)
+
+                # 기본 파라미터 먼저 정의 (tools, tool_choice 제외)
+                create_params = {
+                    "model": model_override or agent.model,
+                    "messages": messages,
+                    "stream": stream,
+                    "max_tokens": 4096,
+                }
+
+                # tools가 있을 때만 tools와 tool_choice를 추가!
+                if tools:
+                    create_params["tools"] = tools
+                    create_params["tool_choice"] = agent.tool_choice
+                    create_params["parallel_tool_calls"] = agent.parallel_tool_calls
+                
+            # import json
+            # import pdb; pdb.set_trace()
+            # print("Messages payload:", json.dumps(create_params["messages"], indent=2))
+>>>>>>> fix
 
                 # tools가 있을 때만 tools와 tool_choice를 추가!
                 if tools:
