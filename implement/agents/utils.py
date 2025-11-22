@@ -7,7 +7,7 @@ import json
 from openai import OpenAI
 
 import yaml
-from dotenv import load_dotenv # 이 친구가 .env를 읽어줍니다
+from dotenv import load_dotenv
 from rich.console import Console
 from rich.logging import RichHandler
 from rich.theme import Theme
@@ -60,7 +60,6 @@ def setup_logging(config: dict, verbose: bool) -> logging.Logger:
 
 def load_config(config_path: str) -> dict:
     """Load configuration from YAML file with environment variable support."""
-    # 여기도 load_dotenv가 있으면 좋지만, 맨 위에서 호출했으니 안전합니다.
     
     with open(config_path, "r") as file:
         content = file.read()

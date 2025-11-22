@@ -59,7 +59,7 @@ class Swarm:
                     if __CTX_VARS_NAME__ in params["required"]:
                         params["required"].remove(__CTX_VARS_NAME__)
 
-                # [수정됨] 기본 파라미터 먼저 정의 (tools, tool_choice 제외)
+                # 기본 파라미터 먼저 정의 (tools, tool_choice 제외)
                 create_params = {
                     "model": model_override or agent.model,
                     "messages": messages,
@@ -67,7 +67,7 @@ class Swarm:
                     "max_tokens": 4096,
                 }
 
-                # [수정됨] tools가 있을 때만 tools와 tool_choice를 추가!
+                # tools가 있을 때만 tools와 tool_choice를 추가!
                 if tools:
                     create_params["tools"] = tools
                     create_params["tool_choice"] = agent.tool_choice
