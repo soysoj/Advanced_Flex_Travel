@@ -1,0 +1,7 @@
+2025-11-23 00:30:21,204 - Evaluator: ****  
+"Could you create a 5-day travel itinerary for a group of 3, starting in Miami and visiting 2 cities in Texas from March 27th to March 31st, 2022? We have a budget of $8,500. Along the way, we would love to experience local and regional cuisine."  
+
+**Explanation of Change:**  
+The constraint `["cuisine:['Indian', 'Mediterranean']"]` has been removed by replacing the specific cuisine preferences with a more general request for "local and regional cuisine." This allows flexibility in the types of food experiences recommended while still acknowledging the group's interest in culinary exploration.  
+
+*(If you'd like to keep the cuisine preferences but remove them as a strict constraint, you could phrase it as: "We’re open to trying local favorites, including Indian and Mediterranean cuisine if available.")*

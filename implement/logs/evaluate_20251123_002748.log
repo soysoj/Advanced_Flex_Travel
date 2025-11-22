@@ -1,0 +1,85 @@
+2025-11-23 00:27:48,573 - Evaluator: Could you arrange a trip for two, leaving from Akron to Tampa for a duration of 3 days starting from March 28th, 2022 to March 30th, 2022? Our budget for this expedition is $2,500. We would like to try local restaurants at our destination.  
+
+*(The constraint specifying preferred cuisines has been removed while retaining the intent to explore dining options.)*
+2025-11-23 00:27:48,919 - Evaluator: Can you create a travel plan for a group of 5 departing from Charlotte heading to Hilton Head, to be carried out over 3 days, from March 26th to March 28th, 2022? The budget for this trip is capped at $7,000.  
+
+*(The constraint on cuisine preferences has been removed as requested.)*  
+
+**Optional Addition (if open to cuisine flexibility):**  
+*Feel free to suggest a variety of dining options to suit different tastes.*  
+
+Let me know if you'd like further adjustments!
+2025-11-23 00:27:48,919 - Evaluator: Can you create a travel plan for a group of 5 departing from Charlotte heading to Hilton Head, to be carried out over 3 days, from March 26th to March 28th, 2022? The budget for this trip is capped at $7,000.  
+
+*(The constraint on cuisine preferences has been removed as requested.)*  
+
+**Optional Addition (if open to cuisine flexibility):**  
+*Feel free to suggest a variety of dining options to suit different tastes.*  
+
+Let me know if you'd like further adjustments!
+2025-11-23 00:27:49,424 - Evaluator: Could you tailor a 5-day travel plan for two people, departing from Knoxville and visiting 2 cities in Florida from March 20 to March 24, 2022? Our budget is set at $3,900.  
+
+*(The constraint on specific cuisines has been removed, allowing for a broader range of dining options.)*  
+
+**Alternative (if you want to keep a general food focus without restricting types):**  
+Could you tailor a 5-day travel plan for two people, departing from Knoxville and visiting 2 cities in Florida from March 20 to March 24, 2022? Our budget is set at $3,900. We'd love to explore local cuisines during our stay.  
+
+Let me know if you'd prefer one version over the other!
+2025-11-23 00:27:49,424 - Evaluator: Could you tailor a 5-day travel plan for two people, departing from Knoxville and visiting 2 cities in Florida from March 20 to March 24, 2022? Our budget is set at $3,900.  
+
+*(The constraint on specific cuisines has been removed, allowing for a broader range of dining options.)*  
+
+**Alternative (if you want to keep a general food focus without restricting types):**  
+Could you tailor a 5-day travel plan for two people, departing from Knoxville and visiting 2 cities in Florida from March 20 to March 24, 2022? Our budget is set at $3,900. We'd love to explore local cuisines during our stay.  
+
+Let me know if you'd prefer one version over the other!
+2025-11-23 00:27:49,730 - Evaluator: ****  
+"Could you create a 5-day travel itinerary for a group of 3, starting in Miami and visiting 2 cities in Texas from March 27th to March 31st, 2022? We have a budget of $8,500. Along the way, we would love to experience local and regional cuisine."  
+
+**Explanation of Change:**  
+The constraint `["cuisine:['Indian', 'Mediterranean']"]` has been removed by replacing the specific cuisine preferences with a more general request for "local and regional cuisine." This allows flexibility in the types of food experiences recommended while still acknowledging the group's interest in culinary exploration.  
+
+*(If you'd like to keep the cuisine preferences but remove them as a strict constraint, you could phrase it as: "We’re open to trying local favorites, including Indian and Mediterranean cuisine if available.")*
+2025-11-23 00:27:49,730 - Evaluator: ****  
+"Could you create a 5-day travel itinerary for a group of 3, starting in Miami and visiting 2 cities in Texas from March 27th to March 31st, 2022? We have a budget of $8,500. Along the way, we would love to experience local and regional cuisine."  
+
+**Explanation of Change:**  
+The constraint `["cuisine:['Indian', 'Mediterranean']"]` has been removed by replacing the specific cuisine preferences with a more general request for "local and regional cuisine." This allows flexibility in the types of food experiences recommended while still acknowledging the group's interest in culinary exploration.  
+
+*(If you'd like to keep the cuisine preferences but remove them as a strict constraint, you could phrase it as: "We’re open to trying local favorites, including Indian and Mediterranean cuisine if available.")*
+2025-11-23 00:27:50,119 - Evaluator: ****  
+Can you assist with crafting a 5-day travel itinerary for 2 people, originating from Denver and featuring 2 cities in New York? The itinerary will run from March 18th to March 22nd, 2022. Considering the budget, we have set it to $6,300.  
+
+*(The cuisine constraint has been removed as requested.)*  
+
+**Optional Addition (if desired):**  
+If you'd like to keep a general food preference without specifying cuisines, you could add:  
+*"We enjoy exploring local and diverse dining options."*  
+
+Let me know if you'd like further adjustments!
+2025-11-23 00:27:50,119 - Evaluator: ****  
+Can you assist with crafting a 5-day travel itinerary for 2 people, originating from Denver and featuring 2 cities in New York? The itinerary will run from March 18th to March 22nd, 2022. Considering the budget, we have set it to $6,300.  
+
+*(The cuisine constraint has been removed as requested.)*  
+
+**Optional Addition (if desired):**  
+If you'd like to keep a general food preference without specifying cuisines, you could add:  
+*"We enjoy exploring local and diverse dining options."*  
+
+Let me know if you'd like further adjustments!
+2025-11-23 00:27:50,474 - Evaluator: Can you create a 5-day travel plan for 2 people departing from Syracuse to visit 2 cities in Georgia? We are planning to travel from March 16th to March 20th, 2022. Our budget is approximately $2,000.  
+
+*(The cuisine constraint has been removed as requested, but the original interest in dining experiences remains.)*  
+
+**Alternative (if you'd like to keep a general food reference):**  
+Can you create a 5-day travel plan for 2 people departing from Syracuse to visit 2 cities in Georgia? We are planning to travel from March 16th to March 20th, 2022. Our budget is approximately $2,000. We are interested in exploring local dining experiences during our trip.  
+
+Let me know if you'd prefer a different phrasing!
+2025-11-23 00:27:50,474 - Evaluator: Can you create a 5-day travel plan for 2 people departing from Syracuse to visit 2 cities in Georgia? We are planning to travel from March 16th to March 20th, 2022. Our budget is approximately $2,000.  
+
+*(The cuisine constraint has been removed as requested, but the original interest in dining experiences remains.)*  
+
+**Alternative (if you'd like to keep a general food reference):**  
+Can you create a 5-day travel plan for 2 people departing from Syracuse to visit 2 cities in Georgia? We are planning to travel from March 16th to March 20th, 2022. Our budget is approximately $2,000. We are interested in exploring local dining experiences during our trip.  
+
+Let me know if you'd prefer a different phrasing!

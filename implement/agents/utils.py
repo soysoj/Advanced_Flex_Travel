@@ -7,10 +7,12 @@ import json
 from openai import OpenAI
 
 import yaml
-from dotenv import load_dotenv
+from dotenv import load_dotenv # 이 친구가 .env를 읽어줍니다
 from rich.console import Console
 from rich.logging import RichHandler
 from rich.theme import Theme
+
+load_dotenv()
 
 # Custom theme for rich
 custom_theme = Theme(
@@ -58,8 +60,8 @@ def setup_logging(config: dict, verbose: bool) -> logging.Logger:
 
 def load_config(config_path: str) -> dict:
     """Load configuration from YAML file with environment variable support."""
-    load_dotenv()
-
+    # 여기도 load_dotenv가 있으면 좋지만, 맨 위에서 호출했으니 안전합니다.
+    
     with open(config_path, "r") as file:
         content = file.read()
         # Replace ${VAR} with environment variables
@@ -95,13 +97,20 @@ def load_line_json_data(filename):
 MODEL_PATHS = {
     "gemini": "gemini-pro",
     "gemini-1.5-flash": "gemini-1.5-flash",
-    "gpt-4o": "gpt-4o",
+    "gpt-4o": "solar-pro2",
 }
 
 def inference_gpt(model_name, prompt):
-    client = OpenAI()
+    if model_name == "gpt-4o":
+        model_name = "solar-pro2"
+
+    client = OpenAI(
+        api_key=os.getenv("OPENAI_API_KEY"),
+        base_url="https://api.upstage.ai/v1"
+    )
+    
     completion = client.chat.completions.create(
-        model=model_name,    # 예: "gpt-4o" 혹은 "gpt-4o-mini"
+        model=model_name,    
         messages=[
             {
                 "role": "user",
