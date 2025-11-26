@@ -4,7 +4,8 @@ import json
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from evaluation.hard_constraint import evaluation as hard_eval
+# from Advanced_Flex_Travel.implement.agents.evaluation.hard_constraint_origin import evaluation as hard_eval
+from .evaluation.hard_constraint import evaluation as hard_eval
 
 
 def planning_validate_constraints(turn_constraint, updated_constraints, response_data, ref_data):
