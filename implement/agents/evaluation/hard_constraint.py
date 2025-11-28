@@ -1006,11 +1006,13 @@ def evaluation(query_data, tested_data, reference_data):
             'is_correct': is_valid_cuisine_pref(query_data, tested_data, reference_data)[0] if query_data.get('cuisine_pref') is not None else None,
             'error_message': is_valid_cuisine_pref(query_data, tested_data, reference_data)[1] if query_data.get('cuisine_pref') is not None else None
         },
+        
         ### 정현: TravelPlanner rule 엔진 결과 ###
         'symbolic_rule': {
             'query_value': None,
             'is_correct': rule_is_correct,
-            'error_message': rule_error
+            'error_message': rule_error,
+            'calculated_value': total_cost,  # 주영님 브랜치 값 그대로 보존
         },
     }
     return return_info
