@@ -16,7 +16,7 @@ def load_line_json_data(filename):
             data.append(unit)
     return data
 
-def convert_bool_values(item):
+def convert_bool_values(item):  
     if isinstance(item, dict):
         return {key: convert_bool_values(value) for key, value in item.items()}
     elif isinstance(item, list):
@@ -349,272 +349,6 @@ def get_city_list_from_reference_data(ref_data):
             city_list.append(key.rsplit(' in ', 1)[-1].strip())
     return city_list
 
-### 정현: TravelPlanner.st 예산 계산에 사용할 multiplier 정의 ###
-BUDGET_MULTIPLIERS = {
-    1: {"flight": 2, "hotel": 1, "restaurant": 3},
-    3: {"flight": 2, "hotel": 3, "restaurant": 9},
-    5: {"flight": 3, "hotel": 5, "restaurant": 15},
-    7: {"flight": 4, "hotel": 7, "restaurant": 21},
-}
-
-
-### 정현: reference record를 dict로 안전하게 변환 ###
-def _ensure_dict(record):
-    if isinstance(record, dict):
-        return record
-    try:
-        return eval(record)
-    except Exception:
-        return None
-
-
-### 정현: 항공편/숙소/식당 가격 샘플을 수집하는 헬퍼 ###
-def _collect_flight_prices(reference_data, org, dest):
-    prices = []
-    preferred_keys = [f"Flight from {org} to {dest}", f"Flight from {dest} to {org}"]
-    keys = preferred_keys + [k for k in reference_data.keys() if k.startswith("Flight from")]
-    seen = set()
-    for key in keys:
-        if key in seen:
-            continue
-        seen.add(key)
-        for record in reference_data.get(key, []):
-            rec = _ensure_dict(record)
-            if not rec:
-                continue
-            price = rec.get("Price")
-            try:
-                if price is not None:
-                    prices.append(float(price))
-            except Exception:
-                continue
-    return prices
-
-
-def _collect_accommodation_prices(reference_data, city, room_type=None, house_rule=None):
-    prices = []
-    candidate_keys = [f"Accommodations in {city}"]
-    candidate_keys += [k for k in reference_data.keys() if k.startswith("Accommodations in ")]
-    seen = set()
-    for key in candidate_keys:
-        if key in seen:
-            continue
-        seen.add(key)
-        for record in reference_data.get(key, []):
-            rec = _ensure_dict(record)
-            if not rec:
-                continue
-            if room_type and rec.get("room type") != room_type:
-                continue
-            if house_rule and rec.get("house_rules") and house_rule in rec.get("house_rules"):
-                continue
-            price = rec.get("price")
-            try:
-                if price is not None:
-                    prices.append(float(price))
-            except Exception:
-                continue
-    return prices
-
-
-def _collect_restaurant_prices(reference_data, city, cuisines=None):
-    prices = []
-    keys = [f"Restaurants in {city}"]
-    keys += [k for k in reference_data.keys() if k.startswith("Restaurants in ")]
-    seen = set()
-    for key in keys:
-        if key in seen:
-            continue
-        seen.add(key)
-        for record in reference_data.get(key, []):
-            rec = _ensure_dict(record)
-            if not rec:
-                continue
-            if cuisines:
-                cuisine_field = rec.get("Cuisines", "")
-                if not any(c in cuisine_field for c in cuisines):
-                    continue
-            price = rec.get("Average Cost")
-            try:
-                if price is not None:
-                    prices.append(float(price))
-            except Exception:
-                continue
-    return prices
-
-
-def _calculate_price_stat(prices, mode):
-    if not prices:
-        return None
-    if mode == "lowest":
-        return min(prices)
-    if mode == "highest":
-        return max(prices)
-    if mode == "average":
-        return sum(prices) / len(prices)
-    raise ValueError("Unknown mode")
-
-
-### 정현: reference 기반 TravelPlanner 스타일 예산 추정 ###
-def estimate_symbolic_budget(query_data, reference_data):
-    days = query_data.get("days")
-    multipliers = BUDGET_MULTIPLIERS.get(days)
-    if not multipliers:
-        return None
-
-    local_constraint = query_data.get("local_constraint", {}) or {}
-    org = query_data.get("org")
-    dest = query_data.get("dest")
-    if not (org and dest):
-        return None
-
-    flight_prices = []
-    if local_constraint.get("transportation") != "no flight":
-        flight_prices = _collect_flight_prices(reference_data, org, dest)
-
-    room_type = local_constraint.get("room type")
-    house_rule = local_constraint.get("house rule")
-    accommodation_prices = _collect_accommodation_prices(reference_data, dest, room_type, house_rule)
-
-    cuisines = local_constraint.get("cuisine")
-    restaurant_prices = _collect_restaurant_prices(reference_data, dest, cuisines)
-
-    budgets = {}
-    for mode in ("lowest", "highest", "average"):
-        flight_cost = _calculate_price_stat(flight_prices, mode) or 0
-        hotel_cost = _calculate_price_stat(accommodation_prices, mode)
-        restaurant_cost = _calculate_price_stat(restaurant_prices, mode)
-
-        if hotel_cost is None or restaurant_cost is None:
-            return None
-
-        total = (
-            flight_cost * multipliers["flight"]
-            + hotel_cost * multipliers["hotel"]
-            + restaurant_cost * multipliers["restaurant"]
-        )
-        budgets[mode] = round(total, 2)
-
-    return budgets
-
-
-def _parse_flight_key(key):
-    match = re.match(r"Flight from (.+?) to (.+?)(?: on (.+))?$", key)
-    if match:
-        origin = match.group(1).strip()
-        dest = match.group(2).strip()
-        date = match.group(3).strip() if match.group(3) else None
-        return origin, dest, date
-    return None, None, None
-
-
-### 정현: TravelPlanner feasibility 룰 구현 ###
-def travelplanner_feasibility_check(query, reference_data):
-    org = query["org"]
-    dest = query["dest"]
-    days = query["days"]
-    date_list = query.get("date", [])
-    if isinstance(date_list, str):
-        try:
-            date_list = eval(date_list)
-        except Exception:
-            date_list = []
-    local = query.get("local_constraint", {}) or {}
-    ppl = query.get("people_number")
-
-    flight_records = []
-    for key, vals in reference_data.items():
-        if not key.startswith("Flight from"):
-            continue
-        origin, destination, key_date = _parse_flight_key(key)
-        if origin != org or destination != dest:
-            continue
-        for f in vals:
-            fd = _ensure_dict(f)
-            if not fd:
-                continue
-            flight_date = fd.get("FlightDate") or key_date
-            if date_list and flight_date not in date_list:
-                continue
-            flight_records.append(fd)
-
-    hotel_records = []
-    hotel_key = f"Accommodations in {dest}"
-    for key, vals in reference_data.items():
-        if key == hotel_key:
-            for h in vals:
-                hd = _ensure_dict(h)
-                if hd:
-                    hotel_records.append(hd)
-
-    restaurant_records = []
-    rest_key = f"Restaurants in {dest}"
-    for key, vals in reference_data.items():
-        if key == rest_key:
-            for r in vals:
-                rd = _ensure_dict(r)
-                if rd:
-                    restaurant_records.append(rd)
-
-    if local.get("transportation") == "no self-driving":
-        if len(flight_records) < 2:
-            return False, "No flight data available for the given constraints."
-
-    if local.get("transportation") == "no flight":
-        if len(flight_records) < 2:
-            return False, "Impossible (no valid flights)."
-        distance = None
-        for record in flight_records:
-            dist_val = record.get("Distance")
-            if dist_val is not None:
-                distance = dist_val
-                break
-        if distance is not None and distance > 800:
-            return False, "Impossible (distance > 800 km)."
-
-    room_type = local.get("room type")
-    room_map = {
-        "shared room": "Shared room",
-        "private room": "Private room",
-        "entire room": "Entire home/apt",
-    }
-    if room_type:
-        if room_type == "not shared room":
-            filtered = [h for h in hotel_records if h.get("room type") and h.get("room type") != "Shared room"]
-        else:
-            expected = room_map.get(room_type)
-            filtered = [h for h in hotel_records if h.get("room type") == expected]
-        if len(filtered) < days:
-            return False, f"No hotel data available for room type = {room_type}"
-
-    hrule = local.get("house rule")
-    if hrule:
-        mapping = {
-            "smoking": "No smoking",
-            "pets": "No pets",
-            "parties": "No parties",
-            "visitors": "No visitors",
-            "children under 10": "No children under 10"
-        }
-        banned = mapping.get(hrule)
-        if banned:
-            filtered = [h for h in hotel_records if banned not in str(h.get("house_rules", ""))]
-            if len(filtered) < days:
-                return False, f"No hotel satisfies given house rule = {hrule}"
-
-    cuisine_list = local.get("cuisine")
-    if cuisine_list:
-        filtered = [r for r in restaurant_records if any(c in str(r.get("Cuisines", "")) for c in cuisine_list)]
-        if len(filtered) < days:
-            return False, "Not enough restaurants satisfy cuisine constraints."
-
-    if ppl:
-        filtered = [h for h in hotel_records if h.get("maximum occupancy", 0) >= ppl]
-        if len(filtered) < days:
-            return False, f"No accommodation available for {ppl} people."
-
-    return True, None
-
 def get_total_cost(question, tested_data, reference_data):
     total_cost = 0
     for i in range(min(question['days'], len(tested_data))):
@@ -942,18 +676,6 @@ def evaluation(query_data, tested_data, reference_data):
         query_data = eval(query_data)
     if type(query_data['local_constraint']) == str:
         query_data['local_constraint'] = eval(query_data['local_constraint'])
-    ### 정현: total_cost와 symbolic budget 미리 계산 ###
-    total_cost = get_total_cost(query_data, tested_data, reference_data)
-    symbolic_budget = estimate_symbolic_budget(query_data, reference_data)
-    budget_value = query_data.get('budget')
-    budget_is_correct = None
-    budget_error = None
-    if budget_value is not None:
-        budget_is_correct = total_cost <= budget_value
-        if not budget_is_correct:
-            budget_error = f"The total cost ({total_cost}) exceeds the budget of {budget_value}."
-    ### 정현: TravelPlanner feasibility rule 검사 ###
-    rule_is_correct, rule_error = travelplanner_feasibility_check(query_data, reference_data)
     return_info = {
         'cuisine': {
             'query_value': query_data['local_constraint']['cuisine'],
@@ -975,12 +697,10 @@ def evaluation(query_data, tested_data, reference_data):
             'is_correct': is_valid_room_type(query_data, tested_data, reference_data)[0],
             'error_message': is_valid_room_type(query_data, tested_data, reference_data)[1]
         },
-        ### 정현: TravelPlanner budget rule 결과를 budget 항목에 포함 ###
         'budget': {
             'query_value': query_data['budget'],
-            'is_correct': budget_is_correct,
-            'error_message': budget_error,
-            'symbolic_budget': symbolic_budget
+            'is_correct': get_total_cost(query_data, tested_data, reference_data) <= query_data['budget'] if query_data['budget'] is not None else None,
+            'error_message': f"The total cost exceeds the budget of {query_data['budget']}." if query_data['budget'] is not None and get_total_cost(query_data, tested_data, reference_data) > query_data['budget'] else None
         },
         'ratings': {
             'query_value': query_data.get('ratings', None),
@@ -989,12 +709,8 @@ def evaluation(query_data, tested_data, reference_data):
         },
         'people_number': {
             'query_value': query_data['people_number'],
-            'is_correct': total_cost <= budget_value if budget_value is not None and query_data['people_number'] is not None else None,
-            'error_message': (
-                f"The total cost ({total_cost}) exceeds the budget of {budget_value}."
-                if budget_value is not None and query_data['people_number'] is not None and total_cost > budget_value
-                else None
-            )
+            'is_correct': get_total_cost(query_data, tested_data, reference_data) <= query_data['budget'] if query_data['budget'] is not None and query_data['people_number'] is not None else None,
+            'error_message': f"The total cost exceeds the budget of {query_data['budget']}." if query_data['budget'] is not None and query_data['people_number'] is not None and get_total_cost(query_data, tested_data, reference_data) > query_data['budget'] else None
         },
         'rating_pref':{
             'query_value': query_data.get('rating_pref', None),
@@ -1005,14 +721,6 @@ def evaluation(query_data, tested_data, reference_data):
             'query_value': query_data.get('cuisine_pref', None),
             'is_correct': is_valid_cuisine_pref(query_data, tested_data, reference_data)[0] if query_data.get('cuisine_pref') is not None else None,
             'error_message': is_valid_cuisine_pref(query_data, tested_data, reference_data)[1] if query_data.get('cuisine_pref') is not None else None
-        },
-        
-        ### 정현: TravelPlanner rule 엔진 결과 ###
-        'symbolic_rule': {
-            'query_value': None,
-            'is_correct': rule_is_correct,
-            'error_message': rule_error,
-            'calculated_value': total_cost,  # 주영님 브랜치 값 그대로 보존
         },
     }
     return return_info

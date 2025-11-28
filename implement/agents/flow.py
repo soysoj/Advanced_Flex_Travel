@@ -7,6 +7,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+# import dataclass
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
@@ -135,18 +136,23 @@ class Response:
     agent: Agent
     context_variables: dict
 
-
 class Evaluator(Agent):
     def __init__(
         self,
         config: dict,
         name: Optional[str] = None,
     ):
+
         evaluator_config = config["evaluator"]
         name = name or evaluator_config["name"]
         client_kwargs = evaluator_config.get("client", None)
-        client = OpenAI(**client_kwargs) if client_kwargs else OpenAI()
-        task = config["task"]
+        # client = OpenAI(**client_kwargs) if client_kwargs else OpenAI()
+        if client_kwargs:
+            client_kwargs['base_url'] = "https://api.upstage.ai/v1"
+            client = OpenAI(**client_kwargs)
+        else:
+            client = OpenAI(base_url="https://api.upstage.ai/v1")
+        task = config['task']
         instructions = ""
         super().__init__(name=name, instructions=instructions, client=client)
         self.task = task
@@ -154,6 +160,8 @@ class Evaluator(Agent):
 
     # 예전 pass-rate 계산 로직은 symbolic_checker로 통합했으므로 사용하지 않음
     """
+        # self.constraints_dict = self.inital_constraints
+        
     def check_constraint(self, constraints: str, response: str):
         if self.task == "test":
             current_constraint_score, total_score = planning_validate_constraints(
@@ -227,22 +235,18 @@ class Evaluatee(Agent):
         model = evaluatee_config["model"]
         api_type = evaluatee_config.get("api_type", "openai")
         client_kwargs = evaluatee_config.get("client", None)
-        if api_type == "together":
-            client = Together(
-                api_key=evaluatee_config.get("client", {}).get("api_key")
-            )
+        if api_type == 'together':
+            client = Together(api_key=evaluatee_config.get("client", {}).get("api_key"))
         else:
-            client = OpenAI(**client_kwargs) if client_kwargs else OpenAI()
+            # client = OpenAI(**client_kwargs) if client_kwargs else OpenAI()
+            if client_kwargs:
+                client_kwargs['base_url'] = "https://api.upstage.ai/v1"
+                client = OpenAI(**client_kwargs)
+            else:
+                client = OpenAI(base_url="https://api.upstage.ai/v1")
 
         instructions = evaluatee_config["instructions"]
-        super().__init__(
-            name=name,
-            model=model,
-            instructions=instructions,
-            client=client,
-            api_type=api_type,
-        )
-
+        super().__init__(name=name, model=model,instructions=instructions, client=client, api_type=api_type)
 
 class Runner:
     def __init__(
@@ -266,14 +270,19 @@ class Runner:
         self.constraints = self.evaluator.new_constraints
         self.evaluator_messages = []
         self.evaluatee_messages = []
-        self.scores = {"constraints": []}
-        self.all_total_scores = []
+        self.scores = {"constraints":[]}
+        self.all_total_scores = []  # Add this line
         self.questions = []
         self.responses = []
         self.seed_question_used = False
+        # self.constraints_dict = self.evaluator.inital_constraints
         self.task = self.evaluator.task
+        
+
 
     def display_message(self, agent_name: str, content: str):
+        """Display a message with proper formatting."""
+
         agent_name_to_style = {
             self.evaluator.name.lower(): "blue",
             self.evaluatee.name.lower(): "green",
@@ -288,17 +297,17 @@ class Runner:
             border_style=style,
             padding=(1, 2),
         )
-
+        # Only print to console if in verbose mode
         if self.logger.getEffectiveLevel() <= logging.INFO:
             self.console.print(panel)
 
+        # Always log to file if file logging is enabled
         self.logger.info(f"{agent_name}: {content}")
 
     def display_results(self, results: Dict[str, Any]):
+        """Display interview results with formatting."""
         score = results["score"]
-        score_color = (
-            "success" if score >= 0.7 else "warning" if score >= 0.5 else "error"
-        )
+        score_color = "success" if score >= 0.7 else "warning" if score >= 0.5 else "error"
 
         results_panel = Panel(
             f"\n[{score_color}]Final Score: {score}[/{score_color}]\n\n"
@@ -311,12 +320,13 @@ class Runner:
         self.console.print("\n")
         self.console.print(results_panel)
 
-    def _get_response(self, agent: Agent, messages: list, context: dict) -> Result:
-        if not self.config["history"]:
+    def _get_response(self, agent: Agent, messages: list,
+                      context: dict) -> Result:
+        """Helper method to get response with progress spinner."""
+        
+        if not self.config['history']:
             messages = [messages[-1]]
-        messages = [
-            {"role": m["role"], "content": str(m["content"])} for m in messages
-        ]
+        messages = [{"role": message["role"], "content": str(message["content"])} for message in messages]
 
         with Progress(
             SpinnerColumn(),
@@ -324,14 +334,11 @@ class Runner:
             console=self.console,
             transient=True,
         ) as progress:
-            progress.add_task("Processing response...", total=None)
-            return self.client.run(
-                agent=agent, messages=messages, context_variables=context
-            )
+            task = progress.add_task("Processing response...", total=None)
+            return self.client.run(agent=agent, messages=messages, context_variables=context)
 
-    def _get_response_raw(
-        self, agent: Agent, messages: list, chat_params: dict, json: bool = False
-    ) -> Response:
+    def _get_response_raw(self, agent: Agent, messages: list,
+                          chat_params: dict, json: bool = False) -> Response:
         with Progress(
             SpinnerColumn(),
             TextColumn("[progress.description]{task.description}"),
