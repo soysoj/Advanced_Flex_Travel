@@ -88,3 +88,18 @@ Please refer to the given reference information only.
 
 [Plan]:
 '''
+
+# Import functions from prompts_add_memory_eval for compatibility
+try:
+    from .prompts_add_memory_eval import (
+        build_constraint_memory,
+        build_priority_block,
+        SELF_EVAL_PROMPT
+    )
+except ImportError:
+    # Fallback if prompts_add_memory_eval is not available
+    def build_constraint_memory(*args, **kwargs):
+        return ""
+    def build_priority_block(*args, **kwargs):
+        return ""
+    SELF_EVAL_PROMPT = ""

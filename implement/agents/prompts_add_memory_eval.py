@@ -114,24 +114,32 @@ Please refer to the given reference information only.
 '''
 
 
-# # 추가) Priority Weighting
-# PRIORITY_BLOCK = """
-# [PRIORITY GUIDE]
-# Each constraint has an importance weight (0–1). The larger the value, the higher the priority.
-# Hard constraints (e.g., budget, room type such as “not shared room”) must always be satisfied. If any are violated, revise the plan.
-# Soft constraints (e.g., cuisine preference, rating preference, etc.) should be satisfied as much as possible according to their weight ratio.
-# Weight Table:
-# {priority_lines}
-# [/PRIORITY GUIDE]
-# """
-# def build_priority_block(priority_map):
-#     if not priority_map:
-#         return ""
-#     lines = [f"- {k}: weight={float(w):.2f}" for k, w in priority_map.items()]
-#     return PRIORITY_BLOCK.format(priority_lines="\n".join(lines))
-# ###
-   
+# 추가) Priority Weighting
+PRIORITY_BLOCK = """
+[PRIORITY GUIDE]
+Each constraint has an importance weight (0–1). The larger the value, the higher the priority.
+Hard constraints (e.g., budget, room type such as "not shared room") must always be satisfied. If any are violated, revise the plan.
+Soft constraints (e.g., cuisine preference, rating preference, etc.) should be satisfied as much as possible according to their weight ratio.
+Weight Table:
+{priority_lines}
+[/PRIORITY GUIDE]
+"""
+
+def build_priority_block(priority_map):
+    """
+    Build priority guide block from priority map.
     
+    Args:
+        priority_map: Dictionary mapping constraint names to weights (0-1)
+        
+    Returns:
+        Formatted priority guide string, or empty string if no priority map
+    """
+    if not priority_map:
+        return ""
+    lines = [f"- {k}: weight={float(w):.2f}" for k, w in priority_map.items()]
+    return PRIORITY_BLOCK.format(priority_lines="\n".join(lines))
+###
 
 # 추가) Self eval
 SELF_EVAL_PROMPT = """

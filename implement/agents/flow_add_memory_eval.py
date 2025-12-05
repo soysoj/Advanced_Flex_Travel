@@ -21,7 +21,7 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 from agents.swarm import Agent, Result, Swarm
 from agents.utils import get_json_prompt
 from agents.constraints_checker import planning_validate_constraints
-from agents.prompts import CONSTRAINT_ADDING_W_HISTORY, CONSTRAINT_ADDING_WO_HISTORY, INITIAL_PROMPT, SELF_EVAL_PROMPT, build_constraint_memory
+from agents.prompts import CONSTRAINT_ADDING_W_HISTORY, CONSTRAINT_ADDING_WO_HISTORY, INITIAL_PROMPT, SELF_EVAL_PROMPT, build_constraint_memory, build_priority_block
 from agents.constraints_generator import update_constraints_and_query
 from agents.postprocess_plan import parse_plan
 
@@ -147,6 +147,8 @@ class Runner:
         # self.constraints_dict = self.evaluator.inital_constraints
         self.task = self.evaluator.task
         
+        # Priority reweighting 초기화
+        self.priority_map = self._calculate_priority_map()
 
 
     def display_message(self, agent_name: str, content: str):
@@ -255,6 +257,33 @@ class Runner:
         current_score, total_score, total_pass_rate = self.evaluator.check_constraint(constraints,response)
         return current_score, total_score, total_pass_rate
 
+    def _calculate_priority_map(self):
+        """
+        Calculate priority weights from constraints.
+        Extracts rank information from constraints and converts to weight map.
+        
+        Returns:
+            Optional[Dict[str, float]]: Dictionary mapping constraint names to weights (0-1),
+                                       or None if no priority information found
+        """
+        from agents.constraints_generator import (
+            extract_all_constraints_for_priority,
+            parse_priority_ranks,
+            calculate_priority_weights
+        )
+        
+        try:
+            all_constraints = extract_all_constraints_for_priority(self.evaluator)
+            priority_ranks = parse_priority_ranks(all_constraints)
+            
+            if priority_ranks:
+                return calculate_priority_weights(priority_ranks)
+        except Exception as e:
+            # If priority calculation fails, log and return None
+            self.logger.warning(f"Failed to calculate priority map: {str(e)}")
+        
+        return None
+
     def call_question_agent(self):
         if self.questions_count == 0:
             query_to_display = self.evaluator.seed_question
@@ -268,7 +297,8 @@ class Runner:
             if self.config['history']:
                 #추가) previous_constraint 다시 넣어주기
                 memory_text = build_constraint_memory(global_constraints = self.evaluator.constraints_dict, new_constraints= self.evaluator.new_constraints[: self.quesstions_count], priority_map = self.priority_map or None)
-                response = (CONSTRAINT_ADDING_W_HISTORY.format(constraint=constraint) + memory_text)
+                priority_block = build_priority_block(self.priority_map) if self.priority_map else ""
+                response = (CONSTRAINT_ADDING_W_HISTORY.format(constraint=constraint) + memory_text + priority_block)
                 ###
             else:
                 response = CONSTRAINT_ADDING_WO_HISTORY.format(

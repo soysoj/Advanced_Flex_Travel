@@ -89,6 +89,9 @@ def main(
     preference_types: str
 ):
     """Run an automated interview evaluation system with flexible constraints."""
+    # Load environment variables from .env file
+    load_dotenv()
+    
     # Show welcome message
     console.print(
         Panel(

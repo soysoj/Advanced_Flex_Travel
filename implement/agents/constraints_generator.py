@@ -378,3 +378,104 @@ def find_min_N_rating_max(budget, N_meal, cuisine_min, reference):
     return None,None  # No valid combination found
 
 
+def parse_priority_ranks(constraints: Dict) -> Dict[str, int]:
+    """
+    Extract priority ranks (1st, 2nd, 3rd) from constraints.
+    
+    Supports multiple formats:
+    1. {'constraint_name': {'value': ..., 'rank': 1}}
+    2. {'constraint_name': {'rank': 1, ...}}
+    3. {'constraint_name': (value, rank)} where rank is int
+    4. {'constraint_name': {'priority': 1}} (alternative field name)
+    
+    Args:
+        constraints: Dictionary of constraints that may contain rank/priority information
+        
+    Returns:
+        Dictionary mapping constraint names to their rank (1st=1, 2nd=2, 3rd=3)
+    """
+    priority_ranks = {}
+    
+    for key, value in constraints.items():
+        if value is None:
+            continue
+            
+        # Format 1 & 2: {'value': ..., 'rank': 1} or {'rank': 1, ...}
+        if isinstance(value, dict):
+            if 'rank' in value:
+                rank = value['rank']
+                if isinstance(rank, int) and rank > 0:
+                    priority_ranks[key] = rank
+            elif 'priority' in value:
+                # Alternative field name
+                rank = value['priority']
+                if isinstance(rank, int) and rank > 0:
+                    priority_ranks[key] = rank
+                    
+        # Format 3: (value, rank) tuple
+        elif isinstance(value, (list, tuple)) and len(value) == 2:
+            if isinstance(value[1], int) and value[1] > 0:
+                priority_ranks[key] = value[1]
+    
+    return priority_ranks
+
+
+def calculate_priority_weights(priority_ranks: Dict[str, int]) -> Dict[str, float]:
+    """
+    Convert ranks (1st=1, 2nd=2, 3rd=3) to weights (0-1 scale).
+    Higher rank (lower number) = higher weight.
+    
+    Formula: weight = (max_rank - rank + 1) / max_rank
+    - 1st rank (rank=1) gets highest weight (1.0 if max_rank=1, or close to 1.0)
+    - Lower ranks get proportionally lower weights
+    
+    Args:
+        priority_ranks: Dictionary mapping constraint names to ranks (1, 2, 3, ...)
+        
+    Returns:
+        Dictionary mapping constraint names to normalized weights (0-1)
+    """
+    if not priority_ranks:
+        return {}
+    
+    max_rank = max(priority_ranks.values())
+    if max_rank <= 0:
+        return {}
+    
+    weights = {}
+    for constraint, rank in priority_ranks.items():
+        # Inverse ranking: 1st rank (rank=1) gets highest weight
+        # Normalize to 0-1 scale
+        # Example: max_rank=3, rank=1 -> weight = (3-1+1)/3 = 1.0
+        #          max_rank=3, rank=2 -> weight = (3-2+1)/3 = 0.67
+        #          max_rank=3, rank=3 -> weight = (3-3+1)/3 = 0.33
+        weights[constraint] = (max_rank - rank + 1) / max_rank
+    
+    return weights
+
+
+def extract_all_constraints_for_priority(evaluator) -> Dict:
+    """
+    Extract all constraints (global + new) for priority calculation.
+    
+    Args:
+        evaluator: Evaluator object with constraints_dict and new_constraints attributes
+        
+    Returns:
+        Dictionary containing all constraints merged together
+    """
+    all_constraints = {}
+    
+    # Add global constraints
+    if hasattr(evaluator, 'constraints_dict') and evaluator.constraints_dict:
+        all_constraints.update(evaluator.constraints_dict)
+    
+    # Add new constraints
+    if hasattr(evaluator, 'new_constraints') and evaluator.new_constraints:
+        for nc in evaluator.new_constraints:
+            if isinstance(nc, dict):
+                all_constraints.update(nc)
+    
+    return all_constraints
+
+
