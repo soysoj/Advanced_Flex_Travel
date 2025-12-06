@@ -6,7 +6,9 @@ evaluator:
   instructions: 
 
 evaluatee:
-  model: "gpt-4o"
+  model: "solar-pro2"
+  client:
+    api_key: "${OPENAI_API_KEY}"  # .env
   instructions: |
     Please answer the following questions to the best of your ability. 
     You will be evaluated based on your responses. 
