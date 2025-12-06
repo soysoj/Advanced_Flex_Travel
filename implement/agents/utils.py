@@ -58,7 +58,12 @@ def setup_logging(config: dict, verbose: bool) -> logging.Logger:
 
 def load_config(config_path: str) -> dict:
     """Load configuration from YAML file with environment variable support."""
-    load_dotenv()
+    # Try to load .env from current directory and parent directory (override existing)
+    env_path = Path(__file__).parent.parent.parent / '.env'
+    if env_path.exists():
+        load_dotenv(dotenv_path=env_path, override=True)  # Project root, override existing
+    else:
+        load_dotenv(override=True)  # Current directory, override existing
 
     with open(config_path, "r") as file:
         content = file.read()
