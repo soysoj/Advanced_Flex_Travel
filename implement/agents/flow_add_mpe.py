@@ -231,9 +231,13 @@ class Evaluatee(Agent): #계획 생성 LLM
         client_kwargs = evaluatee_config.get("client", None)
         if api_type == 'together':
             client = Together(api_key=evaluatee_config.get("client", {}).get("api_key"))
-        
         else:
-            client = OpenAI(**client_kwargs) if client_kwargs else OpenAI()
+            # Upstage API 연동을 위한 base_url 설정
+            if client_kwargs:
+                client_kwargs['base_url'] = "https://api.upstage.ai/v1"
+                client = OpenAI(**client_kwargs)
+            else:
+                client = OpenAI(base_url="https://api.upstage.ai/v1")
 
         instructions = evaluatee_config["instructions"]
         super().__init__(name=name, model=model,instructions=instructions, client=client, api_type=api_type)
