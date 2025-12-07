@@ -4,7 +4,6 @@ CONSTRAINT_BLOCK_TEMPLATE = """
 The following list summarizes the constraints you must satisfy. 
 If there is the priority system, you must satisfy the constraints based on the priority system below:
 {memory_lines}
-[/CURRENT CONSTRAINTS LIST]
 """
 ###
 
@@ -19,7 +18,6 @@ The 'priority' vlaue (0.0 to 1.0) indicates the strictness of the constraint.
 - Priority ~0.5: PREFERENCE constraint (Satisfy if possible, but tradable)
 
 {priority_lines}
-[/PRIORITY SYSTEM INSTRUCTION]
 """
 ## B) NATURAL LANGUAGE LABEL
 GUIDELINE_LABEL = """
@@ -32,7 +30,6 @@ Each constraint has an Importance Level:
 - [LOW] : Optional. Nice to have, but the first to be discarded in conflicts.
 
 {priority_lines}
-[/PRIORITY SYSTEM INSTRUCTION]
 """
 
 ## C) RANK 
@@ -45,7 +42,6 @@ Each constraint is assigned a Rank:
 - Higher rank numbers (e.g., Rank 5, 6) are less important and can be compromised if necessary.
 
 {priority_lines}
-[/PRIORITY SYSTEM INSTRUCTION]
 """
 
 ## D) HYBRID (Label + RANK)
@@ -64,7 +60,6 @@ Each constraint has an Importance Level and a Rank:
    - Lower Rank number = Higher Priority (e.g., Rank 2 beats Rank 3).
 
 {priority_lines}
-[/PRIORITY SYSTEM INSTRUCTION]
 """
 ## E) HYBRID (Label + Weight)
 GUIDELINE_HYBRID_WEIGHT = """
@@ -83,7 +78,6 @@ Each constraint has an Importance Level and a Priority Score:
    - Use this score to resolve conflicts between constraints with the same Importance Level.
 
 {priority_lines}
-[/PRIORITY SYSTEM INSTRUCTION]
 """
 #####
 

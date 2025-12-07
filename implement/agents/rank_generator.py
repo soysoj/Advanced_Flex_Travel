@@ -19,10 +19,12 @@ BASE_IMPORTANCE = {
     'transportation': 85, 
     'house rule': 60, 
     'room type': 55, 
-    'cuisine': 40
+    # preference constraints
+    'cuisine_pref': 35,
+    'rating_pref': 30,
 }
 GLOBAL_KEYS = ['people_number', 'days', 'budget', 'org', 'dest', 'date', 'visiting_city_number']
-LOCAL_KEYS = ['transportation', 'house rule', 'room type', 'cuisine']
+LOCAL_KEYS = ['transportation', 'house rule', 'room type', 'cuisine', 'rating']
 
 # ranking calculation logic
 def calculate_ranks(constraint_keys):
@@ -74,22 +76,55 @@ def generate_ranks_for_item(dataset_item):
             if local_val not in [None, "None", ""] and key not in turn1_keys:
                 turn1_keys.append(key)
 
+    # --- [Turn 1] Preference Constraints ---
+    pref_raw = dataset_item.get('preference_constraint')
+    if isinstance(pref_raw, dict):
+        # cuisine preference
+        if pref_raw.get('cuisine') not in [None, "None", ""]:
+            if 'cuisine_pref' not in turn1_keys:
+                turn1_keys.append('cuisine_pref')
+        # rating preference
+        if pref_raw.get('rating') not in [None, "None", ""]:
+            if 'rating_pref' not in turn1_keys:
+                turn1_keys.append('rating_pref')
+
     ranks_output['turn_1'] = calculate_ranks(turn1_keys)
 
-    # --- [Turn 2] New Constraints ---
+    # --- [Preference-specific Turns] ---
+    # preference_constraint에 들어있는 키별로 독립적인 turn 생성
+    pref_raw = dataset_item.get('preference_constraint')
+    if isinstance(pref_raw, dict) and pref_raw:
+        base_keys = list(turn1_keys)
+        if pref_raw.get('rating') not in [None, "None", ""]:
+            # rating 전용 턴: cuisine_pref는 제외
+            keys = [k for k in base_keys if k != 'cuisine_pref']
+            if 'rating_pref' not in keys:
+                keys.append('rating_pref')
+            ranks_output['turn_2_rating'] = calculate_ranks(keys)
+        if pref_raw.get('cuisine') not in [None, "None", ""]:
+            # cuisine 전용 턴: rating_pref는 제외
+            keys = [k for k in base_keys if k != 'rating_pref']
+            if 'cuisine_pref' not in keys:
+                keys.append('cuisine_pref')
+            ranks_output['turn_2_cuisine'] = calculate_ranks(keys)
+
+    # --- [Turn 2+] New Constraints (한 턴씩 누적) ---
     new_constraints_list = dataset_item.get('new_constraints', [])
-    
-    # 리스트인지 체크
     if isinstance(new_constraints_list, list) and len(new_constraints_list) > 0:
-        turn2_keys = list(turn1_keys)
-        for nc in new_constraints_list:
+        cumulative_keys = list(turn1_keys)
+        for idx, nc in enumerate(new_constraints_list, start=2):  # turn_2, turn_3, ...
+            added = False
             if isinstance(nc, dict):
                 for k, v in nc.items():
-                    if v not in [None, "None", ""] and k not in turn2_keys:
+                    if v not in [None, "None", ""] and k not in cumulative_keys:
                         if k not in ALWAYS_CRITICAL_KEYS:
-                            turn2_keys.append(k)
-        ranks_output['turn_2'] = calculate_ranks(turn2_keys)
-    
+                            cumulative_keys.append(k)
+                            added = True
+            # 빈 dict이거나 추가 키가 없으면 해당 
+            # turn은 만들지 않음 (preference용 빈 new_constraints 방지)
+            if added:
+                ranks_output[f'turn_{idx}'] = calculate_ranks(cumulative_keys)
+
     return ranks_output
 
 # 3. 파일 처리 실행 함수
@@ -168,10 +203,10 @@ def process_all_files(src_root, dest_root):
 if __name__ == "__main__":
     # 경로 설정
     # dataset/
-    INPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database"
-    OUTPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\with_ranks"
-    process_all_files(INPUT_ROOT, OUTPUT_ROOT)
+    # INPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database"
+    # OUTPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database_with_ranks"
+    # process_all_files(INPUT_ROOT, OUTPUT_ROOT)
     # dataset/preference
-    INPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database\reference"
-    OUTPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\with_ranks\reference"
+    INPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database\preference"
+    OUTPUT_ROOT = r"C:\Users\USER\Advanced_Flex_Travel\implement\agents\evaluation\database_with_ranks\preference"
     process_all_files(INPUT_ROOT, OUTPUT_ROOT)

@@ -45,7 +45,7 @@ def setup_logging(config: dict, verbose: bool) -> logging.Logger:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = config["logging"]["filename_template"].format(
                 timestamp=timestamp)
-            file_handler = logging.FileHandler(output_dir / filename)
+            file_handler = logging.FileHandler(output_dir / filename, encoding="utf-8")
             file_handler.setFormatter(formatter)
             file_handler.setLevel(logging.INFO)
             log_file_path = file_handler.baseFilename
@@ -99,9 +99,9 @@ MODEL_PATHS = {
 }
 
 def inference_gpt(model_name, prompt):
-    client = OpenAI()
+    client = OpenAI(base_url="https://api.upstage.ai/v1")
     completion = client.chat.completions.create(
-        model=model_name,    # 예: "gpt-4o" 혹은 "gpt-4o-mini"
+        model= 'solar-pro2', #model_name,    # 예: "gpt-4o" 혹은 "gpt-4o-mini"
         messages=[
             {
                 "role": "user",

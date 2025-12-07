@@ -24,10 +24,12 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "cuisine_pref": 2
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_cuisine": {
+                "budget": 1,
+                "cuisine_pref": 2
             }
         }
     },
@@ -56,10 +58,12 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "cuisine_pref": 2
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_cuisine": {
+                "budget": 1,
+                "cuisine_pref": 2
             }
         }
     },
@@ -88,10 +92,12 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "cuisine_pref": 2
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_cuisine": {
+                "budget": 1,
+                "cuisine_pref": 2
             }
         }
     },
@@ -123,10 +129,17 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "cuisine_pref": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_rating": {
+                "budget": 1,
+                "rating_pref": 2
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "cuisine_pref": 2
             }
         }
     },
@@ -158,10 +171,17 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "cuisine_pref": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_rating": {
+                "budget": 1,
+                "rating_pref": 2
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "cuisine_pref": 2
             }
         }
     },
@@ -190,10 +210,12 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1
+                "budget": 1,
+                "rating_pref": 2
             },
-            "turn_2": {
-                "budget": 1
+            "turn_2_rating": {
+                "budget": 1,
+                "rating_pref": 2
             }
         }
     },
@@ -226,11 +248,19 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "cuisine_pref": 3,
+                "rating_pref": 4
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "rating_pref": 3
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "room type": 2,
+                "cuisine_pref": 3
             }
         }
     },
@@ -263,11 +293,19 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2
+                "house rule": 2,
+                "cuisine_pref": 3,
+                "rating_pref": 4
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "house rule": 2
+                "house rule": 2,
+                "rating_pref": 3
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "house rule": 2,
+                "cuisine_pref": 3
             }
         }
     },
@@ -300,11 +338,19 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "rating_pref": 3,
+                "cuisine_pref": 4
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "rating_pref": 3
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "room type": 2,
+                "cuisine_pref": 3
             }
         }
     },
@@ -334,11 +380,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             }
         }
     },
@@ -371,11 +419,19 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "cuisine_pref": 3,
+                "rating_pref": 4
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "room type": 2
+                "room type": 2,
+                "rating_pref": 3
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "room type": 2,
+                "cuisine_pref": 3
             }
         }
     },
@@ -405,11 +461,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             }
         }
     },
@@ -439,11 +497,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             }
         }
     },
@@ -473,11 +533,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
-                "cuisine": 2
+                "cuisine": 2,
+                "rating_pref": 3
             }
         }
     },
@@ -507,11 +569,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2
+                "house rule": 2,
+                "cuisine_pref": 3
             },
-            "turn_2": {
+            "turn_2_cuisine": {
                 "budget": 1,
-                "house rule": 2
+                "house rule": 2,
+                "cuisine_pref": 3
             }
         }
     },
@@ -542,14 +606,16 @@
             "turn_1": {
                 "budget": 1,
                 "transportation": 2,
-                "house rule": 3,
-                "room type": 4
+                "room type": 3,
+                "house rule": 4,
+                "cuisine_pref": 5
             },
-            "turn_2": {
+            "turn_2_cuisine": {
                 "budget": 1,
                 "transportation": 2,
-                "room type": 3,
-                "house rule": 4
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -581,16 +647,26 @@
         },
         "constraint_ranks": {
             "turn_1": {
-                "transportation": 1,
-                "budget": 2,
-                "house rule": 3,
-                "room type": 4
-            },
-            "turn_2": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
+            },
+            "turn_2_rating": {
+                "budget": 1,
+                "transportation": 2,
+                "house rule": 3,
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
+                "transportation": 1,
+                "budget": 2,
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -622,13 +698,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -663,13 +741,23 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
+                "transportation": 1,
+                "budget": 2,
+                "house rule": 3,
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
                 "budget": 1,
                 "transportation": 2,
-                "house rule": 3,
-                "room type": 4
+                "room type": 3,
+                "house rule": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -701,13 +789,15 @@
                 "budget": 1,
                 "house rule": 2,
                 "room type": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "room type": 2,
-                "house rule": 3,
-                "cuisine": 4
+                "cuisine": 3,
+                "house rule": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -741,14 +831,24 @@
             "turn_1": {
                 "budget": 1,
                 "transportation": 2,
-                "room type": 3,
-                "house rule": 4
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
+                "budget": 1,
+                "transportation": 2,
+                "room type": 3,
+                "house rule": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -780,13 +880,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+            "turn_2_rating": {
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -821,13 +923,23 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "transportation": 2,
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -859,13 +971,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -897,13 +1011,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
-                "budget": 1,
-                "transportation": 2,
+            "turn_2_rating": {
+                "transportation": 1,
+                "budget": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -935,13 +1051,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5
             },
-            "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+            "turn_2_cuisine": {
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -976,13 +1094,23 @@
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "transportation": 2,
+                "room type": 3,
+                "house rule": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -1016,14 +1144,24 @@
             "turn_1": {
                 "budget": 1,
                 "transportation": 2,
-                "room type": 3,
-                "house rule": 4
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5,
+                "rating_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
+                "transportation": 1,
+                "budget": 2,
+                "house rule": 3,
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
                 "budget": 1,
                 "transportation": 2,
-                "room type": 3,
-                "house rule": 4
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     },
@@ -1055,13 +1193,15 @@
                 "budget": 1,
                 "transportation": 2,
                 "room type": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "room type": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -1091,15 +1231,17 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3,
-                "cuisine": 4
+                "room type": 2,
+                "house rule": 3,
+                "cuisine": 4,
+                "rating_pref": 5
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "house rule": 2,
                 "room type": 3,
-                "cuisine": 4
+                "cuisine": 4,
+                "rating_pref": 5
             }
         }
     },
@@ -1134,13 +1276,23 @@
                 "budget": 1,
                 "transportation": 2,
                 "room type": 3,
-                "house rule": 4
+                "house rule": 4,
+                "rating_pref": 5,
+                "cuisine_pref": 6
             },
-            "turn_2": {
+            "turn_2_rating": {
                 "budget": 1,
                 "transportation": 2,
                 "house rule": 3,
-                "room type": 4
+                "room type": 4,
+                "rating_pref": 5
+            },
+            "turn_2_cuisine": {
+                "budget": 1,
+                "transportation": 2,
+                "house rule": 3,
+                "room type": 4,
+                "cuisine_pref": 5
             }
         }
     }

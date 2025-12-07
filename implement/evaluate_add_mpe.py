@@ -258,13 +258,13 @@ def run_two_constraints_mode(
         # Load existing results if file exists
         all_results = {}
         if os.path.exists(results_file):
-            with open(results_file, 'r') as f:
+            with open(results_file, 'r', encoding = 'utf-8') as f:
                 all_results = json.load(f)
         
-        dataset_file = f"{dataset_dir}/{condition}_dataset.json"
+        dataset_file = f"{dataset_dir}/val_dataset_without_two_constraints_{condition}.json"
         
         try:
-            with open(dataset_file, "r") as f:
+            with open(dataset_file, "r", encoding = 'utf-8') as f:
                 dataset = json.load(f)
             
             # Filter dataset based on condition
@@ -291,7 +291,7 @@ def run_two_constraints_mode(
                 )
                 
                 # Save updated results after each data item
-                with open(results_file, 'w') as f:
+                with open(results_file, 'w', encoding = 'utf-8') as f:
                     json.dump(all_results, f, indent=4)
                 
                 console.print(f"[green]Saved results for data {idx_str}[/green]")
@@ -419,13 +419,13 @@ def run_preference_mode(
             # Load existing results if file exists
             all_results = {}
             if os.path.exists(results_file):
-                with open(results_file, 'r') as f:
+                with open(results_file, 'r', encoding = 'utf-8') as f:
                     all_results = json.load(f)
 
             dataset_file = os.path.join(dataset_dir, f"preference/val_dataset_full_{budget_type}_budget.json")
             
             try:
-                with open(dataset_file, "r") as f:
+                with open(dataset_file, "r", encoding = 'utf-8') as f:
                     dataset = json.load(f)
 
                 for data in dataset:

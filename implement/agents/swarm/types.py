@@ -4,7 +4,7 @@ from openai import OpenAI
 from openai.types.chat import ChatCompletionMessage
 from openai.types.chat.chat_completion_message_tool_call import ChatCompletionMessageToolCall, Function
 # from transformers import AutoTokenizer, AutoModelForCausalLM
-from together import Together
+# from together import Together
 
 # Third-party imports
 from pydantic import BaseModel
@@ -19,7 +19,7 @@ class Agent(BaseModel):
     functions: List[AgentFunction] = []
     tool_choice: str = None
     parallel_tool_calls: bool = True
-    client: Union[OpenAI, Together]
+    client: Union[OpenAI] # , Together]
 
     # Allow arbitrary attributes
     class Config:

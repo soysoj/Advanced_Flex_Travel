@@ -13,7 +13,7 @@ from typing import Any, Dict, Optional
 
 import yaml
 from openai import OpenAI
-from together import Together
+# from together import Together
 from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
@@ -21,11 +21,9 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 from agents.swarm import Agent, Result, Swarm
 from agents.utils import get_json_prompt
 from agents.constraints_checker import planning_validate_constraints
-from agents.prompts import CONSTRAINT_ADDING_W_HISTORY, CONSTRAINT_ADDING_WO_HISTORY, INITIAL_PROMPT
-from agents.prompts_add_mpe import build_constraint_memory, get_priority_guideline, SELF_EVAL_PROMPT 
+from agents.prompts_add_mpe import build_constraint_memory, get_priority_guideline, SELF_EVAL_PROMPT, CONSTRAINT_ADDING_W_HISTORY, CONSTRAINT_ADDING_WO_HISTORY, INITIAL_PROMPT 
 from agents.constraints_generator import update_constraints_and_query
 from agents.postprocess_plan import parse_plan
-import math
 
 #추가
 import ast
@@ -38,13 +36,21 @@ ALWAYS_CRITICAL_KEYS = [
     'date', 
     'visiting_city_number'
 ]
+# Pass-rate grouping helpers
+GLOBAL_KEYS = {'budget', 'people_number', 'days', 'org', 'dest', 'date', 'visiting_city_number'}
+LOCAL_KEYS = {'house rule', 'room type', 'transportation', 'cuisine', 'ratings'}
+PREFERENCE_KEYS = {'cuisine_pref', 'rating_pref'}
 ### NUMERICAL PRIORITY MAP
-def calculate_priority_numerical(rank_map):
-    """Numerical priority (1.0, 0.88, ...)"""
-    if not rank_map: return {}
-    
+def calculate_priority_numerical(rank_map, mode: str = "linear"):
+    """Numerical priority.
+    - linear: 가중치를 개수 기반 선형 분포로 떨어뜨림 (최소 0.2 보장)
+    - reciprocal: 역수 분포를 정규화해 너무 작아지지 않도록 보정
+    """
+    if not rank_map:
+        return {}
+
     priority_map = {}
-    # 1. Critical keys와 비교할 keys 분류.
+    # 1. Critical keys → 1.0 고정, 나머지는 경쟁 그룹에 담기
     competitors = []
     for key, rank in rank_map.items():
         if key in ALWAYS_CRITICAL_KEYS:
@@ -54,14 +60,30 @@ def calculate_priority_numerical(rank_map):
 
     # 2. Competitor 재정렬 (Rank순)
     competitors.sort(key=lambda x: x[1])
+    # 경쟁 그룹 크기 (ALWAYS_CRITICAL_KEYS 제외)
+    n = len(competitors)
 
-    # 3. Exponential Decay
-    decay_factor = 0.9
+    def linear_weight(idx, total, min_w=0.2, max_w=1.0):
+        if total <= 1:
+            return max_w
+        step = (max_w - min_w) / (total - 1)
+        return max(max_w - step * idx, min_w)
+
+    def reciprocal_weight(idx, total):
+        if total <= 1:
+            return 1.0
+        weights = [1 / (i + 1) for i in range(total)]
+        total_w = sum(weights)
+        # 정규화하여 평균을 1.0 근처로 유지
+        return (weights[idx] / total_w) * total
+
     for i, (key, _) in enumerate(competitors):
-        # 1등=1.0, 2등=0.9, 3등=0.81 ...
-        weight = pow(decay_factor, i)
+        if mode == "reciprocal":
+            weight = reciprocal_weight(i, n)
+        else:  # linear
+            weight = linear_weight(i, n)
         priority_map[key] = round(max(0.1, weight), 2)
-        
+
     return priority_map
 
 ### RANK PRIORITY MAP
@@ -81,7 +103,8 @@ def calculate_priority_label(rank_map):
 def calculate_priority_hybrid_rank(rank_map):
     """
     1. 필수 키(Always Critical)는 무조건 [CRITICAL] 부여.
-    2. 나머지 키들끼리만 다시 줄을 세워 백분위 상대평가(HIGH/MED/LOW).
+    2. 나머지 키들끼리만 다시 줄을 세워 상대평가(HIGH/MED/LOW)하되,
+       전체 개수에 따라 임계값을 가변적으로 설정.
     3. Rank는 받았던 그대로 사용.
     """
     if not rank_map: return {}
@@ -103,20 +126,26 @@ def calculate_priority_hybrid_rank(rank_map):
     competitors.sort(key=lambda x: x[1])
     total_competitors = len(competitors)
 
-    # 3. 상대 평가 (백분위)
+    # 3. 상대 평가 (가변 임계값)
     if total_competitors > 0:
+        # 개수 기반 임계값: 상위 1/3 → HIGH, 중간 1/3 → MED, 나머지 → LOW
+        import math
+        high_cut = max(1, math.ceil(total_competitors / 3))
+        med_cut = max(high_cut + 1, math.ceil((2 * total_competitors) / 3))
+
         for i, (key, original_rank) in enumerate(competitors):
             relative_rank = i + 1
             
             if total_competitors == 1:
                 label = "[HIGH]"
+            elif total_competitors == 2:
+                label = "[HIGH]" if relative_rank == 1 else "[MEDIUM]"
             else:
-                ratio = relative_rank / total_competitors
-                if ratio <= 0.4:      # 상위 40%
+                if relative_rank <= high_cut:
                     label = "[HIGH]"
-                elif ratio <= 0.75:   # 상위 75%
+                elif relative_rank <= med_cut:
                     label = "[MEDIUM]"
-                else:                 # 하위 25%
+                else:
                     label = "[LOW]"
             
             priority_map[key] = {
@@ -230,7 +259,8 @@ class Evaluatee(Agent): #계획 생성 LLM
         api_type = evaluatee_config.get("api_type", "openai")
         client_kwargs = evaluatee_config.get("client", None)
         if api_type == 'together':
-            client = Together(api_key=evaluatee_config.get("client", {}).get("api_key"))
+            # client = Together(api_key=evaluatee_config.get("client", {}).get("api_key"))
+            pass
         else:
             # Upstage API 연동을 위한 base_url 설정
             if client_kwargs:
@@ -390,19 +420,7 @@ class Runner:
 
         user_query_text = ""
         response_prompt = ""
-        # Priority Helper : 현재 constraint에 대한 priority 적용.
-        def get_tag_for_key(key, p_info, mode):
-            if not p_info or key not in p_info: return ""
-            val = p_info[key]
-            if isinstance(val, dict) and val.get('label') == "[CRITICAL]":
-                return "(Importance: [CRITICAL])"
-            
-            if mode == "hybrid_rank": return f"(Importance: {val['label']} - Rank {val['rank']})"
-            elif mode == "hybrid_weight": return f"(Importance: {val['label']} - Priority {val['weight']:.2f})"
-            elif mode == "label": return f"(Importance: {val})"
-            elif mode == "rank_only": return f"(Rank {val})"
-            else: return f"(Priority {val:.2f})"
-
+        current_turn_keys = []
 
         # 질문 텍스트 준비
         target_constraints = {}
@@ -427,8 +445,20 @@ class Runner:
             priority_list = []
             raw_constraints = target_constraints if target_constraints else self.evaluator.constraints_dict
             needed_constraints = []
+            constraint_values = {}
+
+            # preference용 랭크가 있는 경우 cuisine -> cuisine_pref로 정규화
+            def canonical_key(k: str) -> str:
+                if k == 'cuisine' and 'cuisine_pref' in self.evaluator.constraint_ranks.get('turn_1', {}):
+                    return 'cuisine_pref'
+                if k == 'cuisine' and 'cuisine_pref' in self.evaluator.constraint_ranks:
+                    return 'cuisine_pref'
+                return k
+
             for k, v in raw_constraints.items():
                 if k == 'local_constraint':
+                    # Normalize local constraint data to a dict; avoid unbound actual_data
+                    actual_data = {}
                     if isinstance(v, str):
                         try:
                             # str -> dict
@@ -436,23 +466,40 @@ class Runner:
                         except Exception as e:
                             print(f"[Warning] Failed to parse local_constraint: {v}")
                             actual_data = {}
+                    elif isinstance(v, dict):
+                        actual_data = v
 
                     if isinstance(actual_data, dict):
-                        for sub_k in actual_data.keys():
-                            needed_constraints.append(sub_k)
-                            break
+                        for sub_k, sub_v in actual_data.items():
+                            canon_k = canonical_key(sub_k)
+                            if canon_k not in needed_constraints:
+                                needed_constraints.append(canon_k)
+                            constraint_values[canon_k] = sub_v
                 else:
-                    needed_constraints.append(k)
+                    canon_k = canonical_key(k)
+                    if canon_k not in needed_constraints:
+                        needed_constraints.append(canon_k)
+                    constraint_values[canon_k] = v
 
             all_ranks = self.evaluator.constraint_ranks
-            ranks = all_ranks.get('turn_1', {}) if self.questions_count == 0 else all_ranks.get('turn_2', all_ranks.get('turn_1', {}))
+            # 랭크 키 결정: preference 전용(turn_2_rating/turn_2_cuisine) 우선, 없으면 일반 turn_n 사용
+            if self.questions_count == 0:
+                rank_key = 'turn_1'
+            else:
+                if len(current_turn_keys) == 1 and current_turn_keys[0] in ('rating_pref', 'cuisine_pref'):
+                    pref_key = current_turn_keys[0].split('_')[0]  # rating / cuisine
+                    rank_key = f"turn_{self.questions_count+1}_{pref_key}"
+                else:
+                    rank_key = f"turn_{self.questions_count+1}"
+            ranks = all_ranks.get(rank_key, all_ranks.get('turn_2', all_ranks.get('turn_1', {})))
 
             # config priority_type 설정에 따라 priority 계산
+            numerical_mode = "linear" if self.questions_count == 0 else "reciprocal"
             if priority_type == 'hybrid_rank': priority_info = calculate_priority_hybrid_rank(ranks)
             elif priority_type == 'hybrid_weight': priority_info = calculate_priority_hybrid_weight(ranks)
             elif priority_type == 'label': priority_info = calculate_priority_label(ranks)
             elif priority_type == 'rank_only': priority_info = calculate_priority_rank_only(ranks)
-            else: priority_info = calculate_priority_numerical(ranks)
+            else: priority_info = calculate_priority_numerical(ranks, mode=numerical_mode)
 
             guideline_text = get_priority_guideline(priority_type)
 
@@ -481,14 +528,18 @@ class Runner:
             default_next_rank = current_max_rank + 1
 
             # 해당 priority 값 주입
+            include_values = bool(use_memory)  # 값 노출은 use_memory가 켜진 경우에만
+
             for k in needed_constraints:
+                val_repr = constraint_values.get(k, "")
+                val_repr = val_repr if isinstance(val_repr, str) else str(val_repr)
                 if k.lower() in [key.lower() for key in ALWAYS_CRITICAL_KEYS]:
                     if priority_type == 'numerical':
-                        priority_list.append(f"- {k} : 1.00")
+                        priority_list.append(f"- {k}: {val_repr} [Weight 1.00]" if include_values else f"- {k} : 1.00")
                     elif priority_type == 'rank_only':
-                        priority_list.append(f"- {k} : Rank 1")
+                        priority_list.append(f"- {k}: {val_repr} [Rank 1]" if include_values else f"- {k} : Rank 1")
                     else:
-                        priority_list.append(f"- {k} : [CRITICAL]")
+                        priority_list.append(f"- {k}: {val_repr} [CRITICAL]" if include_values else f"- {k} : [CRITICAL]")
                     continue
 
                 if k in priority_info and priority_info:
@@ -497,35 +548,35 @@ class Runner:
                     # 모드별 포맷팅 분기 (Priority Type을 완벽히 고려)
                     if priority_type == 'hybrid_rank':
                         # 예: - Budget : [HIGH] (Rank 1)
-                        priority_list.append(f"- {k} : {val['label']} (Rank {val['rank']})")
+                        priority_list.append(f"- {k}: {val_repr} {val['label']} [Rank {val['rank']}]" if include_values else f"- {k} : {val['label']} (Rank {val['rank']})")
                         
                     elif priority_type == 'hybrid_weight':
                         # 예: - Budget : [HIGH] (Weight 0.85) 
-                        priority_list.append(f"- {k} : {val['label']} (Weight {val['weight']:.2f})")
+                        priority_list.append(f"- {k}: {val_repr} {val['label']} [Weight {val['weight']:.2f}]" if include_values else f"- {k} : {val['label']} (Weight {val['weight']:.2f})")
                         
                     elif priority_type == 'label':
                         # 예: - Budget : [HIGH]
                         label = val['label'] if isinstance(val, dict) else val
-                        priority_list.append(f"- {k} : {label}")
+                        priority_list.append(f"- {k}: {val_repr} {label}" if include_values else f"- {k} : {label}")
                         
                     elif priority_type == 'rank_only':
                         # 예: - Budget : Rank 1
-                        priority_list.append(f"- {k} : Rank {val}")
+                        priority_list.append(f"- {k}: {val_repr} [Rank {val}]" if include_values else f"- {k} : Rank {val}")
                         
                     else:
                         # 기본 (Numerical)
-                        priority_list.append(f"- {k} : {val}")
+                        priority_list.append(f"- {k}: {val_repr} [Weight {val}]" if include_values else f"- {k} : {val}")
                 else:
                     # 정보 없음
                     if priority_type == 'numerical':
                         # Weight 모드인데 정보가 없으면 낮은 점수 부여
-                        priority_list.append(f"- {k} : 0.10")
+                        priority_list.append(f"- {k}: {val_repr} [Weight 0.10]" if include_values else f"- {k} : 0.10")
                     elif priority_type == 'rank_only':
                         # Rank 모드인데 정보가 없으면 낮은 순위 부여
-                        priority_list.append(f"- {k} : Rank {default_next_rank}") 
+                        priority_list.append(f"- {k}: {val_repr} [Rank {default_next_rank}]" if include_values else f"- {k} : Rank {default_next_rank}") 
                     else: #hybrid의 경우, RANK가 주어지지 않았다면 label만 나올것.
                         # Label / Hybrid Rank / Hybrid weight 모드는 [LOW] 사용 
-                        priority_list.append(f"- {k} : [LOW]")
+                        priority_list.append(f"- {k}: {val_repr} [LOW]" if include_values else f"- {k} : [LOW]")
             
             if priority_list:
                 priority_details_text = "\n".join(priority_list)
@@ -540,9 +591,9 @@ class Runner:
                 # full prompt 뒤에 붙이기
                  guideline_text += "\n\n[Current Constraints Priority]:\n" + priority_details_text
             
-        # Memory Block 생성 (use_memory=True일 때만)
+        # Memory Block 생성 (use_memory=True, use_priority = False, first turn이 아닐 때)
         constraint_block_text = ""
-        if use_memory:
+        if use_memory and not use_priority and self.questions_count > 0:
             current_new_constraints = self.evaluator.new_constraints[:self.questions_count]
             constraint_block_text = build_constraint_memory(
                 previous_constraints= self.evaluator.constraints_dict,
@@ -552,16 +603,19 @@ class Runner:
 
         # 프롬프트 조립
         prompt_components = []
-        # 사용자 요청
-        if self.questions_count == 0:
-            prompt_components.append(f"[User Request]: {user_query_text}")
-        else:
-            prompt_components.append(f"[New Request]: {user_query_text}")
-        
+
+
+        # memory + priority 둘 다 켜진 경우 추가 안내 문구
+        if use_memory and use_priority:
+            prompt_components.append(
+                "The following list summarizes the constraints you must satisfy.\n"
+                "If there is the priority system, you must satisfy the constraints based on the priority system below:"
+            )
+
         # priority info 넣기
         if guideline_text: prompt_components.append(guideline_text)
         # 과거 메모리 넣기.
-        if constraint_block_text: prompt_components.append(constraint_block_text)
+        if constraint_block_text and not guideline_text: prompt_components.append(constraint_block_text)
         
         combined_content = "\n\n".join(prompt_components)   
         if self.questions_count == 0:
@@ -569,7 +623,7 @@ class Runner:
         else:
             if self.config.get('history', True):
                 response_prompt = CONSTRAINT_ADDING_W_HISTORY.format(constraint=constraint)
-                response_prompt.append(combined_content)
+                response_prompt = f"{response_prompt}\n\n{combined_content}"
             else:
                 prev_condition = "\n".join(f"{k}: {v}" for k, v in self.evaluator.constraints_dict.items())
                 response_prompt = CONSTRAINT_ADDING_WO_HISTORY.format(
@@ -578,7 +632,7 @@ class Runner:
                     additional_condition=constraint,
                     response=self.responses[-1] if self.responses else ""
                 )
-                response_prompt.append(combined_content)
+                response_prompt = f"{response_prompt}\n\n{combined_content}"
 
         # SELF_EVAL
         if use_self_eval:
@@ -641,6 +695,7 @@ class Runner:
             if self.questions_count <= self.max_constraints:
                 self.console.print(f"\n[info]Constraints {self.questions_count}")
                 query_to_display, response = self.call_question_agent()
+
                 self.questions.append(response)
                 self.add_message(self.evaluator, response)
                 rm_txt = '[Reference information]:\nAll costs are per one person, one night.\n' + str(self.evaluator.ref_data) + '\n\n' 

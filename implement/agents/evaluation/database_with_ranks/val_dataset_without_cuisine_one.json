@@ -707,8 +707,8 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3
+                "room type": 2,
+                "house rule": 3
             },
             "turn_2": {
                 "budget": 1,
@@ -785,8 +785,8 @@
                 "house rule": 3
             },
             "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -822,8 +822,8 @@
                 "house rule": 3
             },
             "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -859,8 +859,8 @@
                 "house rule": 3
             },
             "turn_2": {
-                "budget": 1,
-                "transportation": 2,
+                "transportation": 1,
+                "budget": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -928,8 +928,8 @@
         "idx": 131,
         "constraint_ranks": {
             "turn_1": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3
             },
             "turn_2": {
@@ -1040,13 +1040,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3
+                "room type": 2,
+                "house rule": 3
             },
             "turn_2": {
                 "budget": 1,
-                "room type": 2,
-                "house rule": 3,
+                "house rule": 2,
+                "room type": 3,
                 "cuisine": 4
             }
         }
@@ -1076,13 +1076,13 @@
         "idx": 139,
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1,
-                "transportation": 2,
+                "transportation": 1,
+                "budget": 2,
                 "house rule": 3
             },
             "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -1114,8 +1114,8 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "room type": 2,
-                "house rule": 3
+                "house rule": 2,
+                "room type": 3
             },
             "turn_2": {
                 "budget": 1,
@@ -1151,13 +1151,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3
+                "room type": 2,
+                "house rule": 3
             },
             "turn_2": {
                 "budget": 1,
-                "room type": 2,
-                "house rule": 3,
+                "house rule": 2,
+                "room type": 3,
                 "cuisine": 4
             }
         }
@@ -1188,13 +1188,13 @@
         "constraint_ranks": {
             "turn_1": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3
+                "room type": 2,
+                "house rule": 3
             },
             "turn_2": {
                 "budget": 1,
-                "house rule": 2,
-                "room type": 3,
+                "room type": 2,
+                "house rule": 3,
                 "cuisine": 4
             }
         }
@@ -1229,8 +1229,8 @@
                 "house rule": 3
             },
             "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -1303,8 +1303,8 @@
                 "house rule": 3
             },
             "turn_2": {
-                "transportation": 1,
-                "budget": 2,
+                "budget": 1,
+                "transportation": 2,
                 "house rule": 3,
                 "cuisine": 4
             }
@@ -1409,8 +1409,8 @@
         "idx": 160,
         "constraint_ranks": {
             "turn_1": {
-                "budget": 1,
-                "transportation": 2,
+                "transportation": 1,
+                "budget": 2,
                 "house rule": 3
             },
             "turn_2": {
@@ -1451,8 +1451,8 @@
                 "room type": 3
             },
             "turn_2": {
-                "budget": 1,
-                "transportation": 2,
+                "transportation": 1,
+                "budget": 2,
                 "room type": 3,
                 "cuisine": 4
             }
@@ -1637,8 +1637,8 @@
             },
             "turn_2": {
                 "budget": 1,
-                "room type": 2,
-                "house rule": 3,
+                "house rule": 2,
+                "room type": 3,
                 "cuisine": 4
             }
         }
