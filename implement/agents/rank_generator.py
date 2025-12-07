@@ -76,18 +76,6 @@ def generate_ranks_for_item(dataset_item):
             if local_val not in [None, "None", ""] and key not in turn1_keys:
                 turn1_keys.append(key)
 
-    # --- [Turn 1] Preference Constraints ---
-    pref_raw = dataset_item.get('preference_constraint')
-    if isinstance(pref_raw, dict):
-        # cuisine preference
-        if pref_raw.get('cuisine') not in [None, "None", ""]:
-            if 'cuisine_pref' not in turn1_keys:
-                turn1_keys.append('cuisine_pref')
-        # rating preference
-        if pref_raw.get('rating') not in [None, "None", ""]:
-            if 'rating_pref' not in turn1_keys:
-                turn1_keys.append('rating_pref')
-
     ranks_output['turn_1'] = calculate_ranks(turn1_keys)
 
     # --- [Preference-specific Turns] ---
