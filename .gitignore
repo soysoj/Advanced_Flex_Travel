@@ -22,8 +22,9 @@ __pycache__/
 logs/
 
 # Results
-results/
+# results/  # Commented out to allow committing results
 *.json
+!**/results/**/*.json  # Allow JSON files in results directory
 
 # OS
 .DS_Store

@@ -1,0 +1,4037 @@
+{
+    "21": {
+        "constraint_type": "cuisine",
+        "data_idx": "21",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Colorado Springs to Moline",
+                        "transportation": "Self-driving, from Colorado Springs to Moline, Departure Time: -",
+                        "breakfast": "-",
+                        "attraction": "Sylvan Island, Moline;John Deere Pavilion, Moline;",
+                        "lunch": "-",
+                        "dinner": "Zoe, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Moline",
+                        "transportation": "-",
+                        "breakfast": "Hucka, Moline",
+                        "attraction": "Celebration River Cruises, Moline;Ben Butterworth Parkway, Moline;",
+                        "lunch": "Arabian Knights, Moline",
+                        "dinner": "Lovecrumbs Bakery, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Moline to Rockford",
+                        "transportation": "Self-driving, from Moline to Rockford, Departure Time: -",
+                        "breakfast": "-",
+                        "attraction": "Burpee Museum of Natural History, Rockford;Discovery Center Museum, Rockford;",
+                        "lunch": "-",
+                        "dinner": "Coco Bambu, Rockford",
+                        "accommodation": "Modern 1-bedroom apartment in Fordham, Rockford"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Rockford",
+                        "transportation": "-",
+                        "breakfast": "Nutri Punch, Rockford",
+                        "attraction": "Anderson Japanese Gardens, Rockford;Nicholas Conservatory & Gardens, Rockford;",
+                        "lunch": "Flying Mango, Rockford",
+                        "dinner": "Chaophraya, Rockford",
+                        "accommodation": "Modern 1-bedroom apartment in Fordham, Rockford"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Rockford to Colorado Springs",
+                        "transportation": "Self-driving, from Rockford to Colorado Springs, Departure Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1805.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.0
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Colorado Springs to Moline",
+                        "transportation": "Self-driving, from Colorado Springs to Moline, Duration: 12h 49m",
+                        "breakfast": "-",
+                        "attraction": "Sylvan Island, Moline;John Deere Pavilion, Moline;",
+                        "lunch": "The Bar - Trident Gurgaon (Mexican option), Moline",
+                        "dinner": "The Bar - Trident Gurgaon (Mexican option), Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Moline",
+                        "transportation": "-",
+                        "breakfast": "The Bar - Trident Gurgaon (Mexican option), Moline",
+                        "attraction": "Celebration River Cruises, Moline;Ben Butterworth Parkway, Moline;",
+                        "lunch": "The Bar - Trident Gurgaon (Mexican option), Moline",
+                        "dinner": "Arabian Knights (closest alternative), Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Moline to Rockford",
+                        "transportation": "Self-driving, from Moline to Rockford, Duration: 2h 1m",
+                        "breakfast": "The Bar - Trident Gurgaon (takeout), Moline",
+                        "attraction": "Burpee Museum of Natural History, Rockford;Discovery Center Museum, Rockford;",
+                        "lunch": "Mirchievous (Indian/Mexican fusion), Rockford",
+                        "dinner": "Coco Bambu (closest alternative), Rockford",
+                        "accommodation": "Modern 1-bedroom apartment in Fordham, Rockford"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Rockford",
+                        "transportation": "-",
+                        "breakfast": "Subway (limited Mexican options), Rockford",
+                        "attraction": "Anderson Japanese Gardens, Rockford;Nicholas Conservatory & Gardens, Rockford;",
+                        "lunch": "Subway (limited Mexican options), Rockford",
+                        "dinner": "Chaophraya (closest alternative), Rockford",
+                        "accommodation": "Modern 1-bedroom apartment in Fordham, Rockford"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Rockford to Colorado Springs",
+                        "transportation": "Self-driving, from Rockford to Colorado Springs, Duration: 14h 38m",
+                        "breakfast": "Subway (limited Mexican options), Rockford",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1805.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mexican",
+                            6
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mexican is missing 6 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.0
+            }
+        ]
+    },
+    "27": {
+        "constraint_type": "cuisine",
+        "data_idx": "27",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Washington to Norfolk",
+                        "transportation": "Flight Number: F3926192, from Washington to Norfolk, Departure Time: 17:25, Arrival Time: 18:25",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Perch Wine & Coffee Bar, Norfolk",
+                        "accommodation": "Large studio all to yourself, Norfolk"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Norfolk",
+                        "transportation": "-",
+                        "breakfast": "Perch Wine & Coffee Bar, Norfolk",
+                        "attraction": "Chrysler Museum of Art, Norfolk;Neon District, Norfolk;Nauticus, Norfolk;",
+                        "lunch": "Red Chilli, Norfolk",
+                        "dinner": "Jonathan's Kitchen - Holiday Inn Express & Suites, Norfolk",
+                        "accommodation": "Large studio all to yourself, Norfolk"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Norfolk to Lynchburg",
+                        "transportation": "Self-driving, from Norfolk to Lynchburg, Duration: 3h 27m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "Khan Chacha, Lynchburg",
+                        "dinner": "Shagun, Lynchburg",
+                        "accommodation": "Blue House on the Hill, Lynchburg"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Lynchburg",
+                        "transportation": "-",
+                        "breakfast": "Shagun, Lynchburg",
+                        "attraction": "Amazement Square, Lynchburg;Riverfront Park, Lynchburg;Point of Honor, Lynchburg;",
+                        "lunch": "Khyen Chyen, Lynchburg",
+                        "dinner": "Pirates Of Grill, Lynchburg",
+                        "accommodation": "Blue House on the Hill, Lynchburg"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Lynchburg to Washington",
+                        "transportation": "Self-driving, from Lynchburg to Washington, Duration: 3h 19m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2090.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Washington to Norfolk",
+                        "transportation": "Flight Number: F3926192, from Washington to Norfolk, Departure Time: 17:25, Arrival Time: 18:25",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Perch Wine & Coffee Bar, Norfolk",
+                        "accommodation": "Large studio all to yourself, Norfolk"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Norfolk",
+                        "transportation": "-",
+                        "breakfast": "Perch Wine & Coffee Bar, Norfolk",
+                        "attraction": "Chrysler Museum of Art, Norfolk;Neon District, Norfolk;Nauticus, Norfolk;",
+                        "lunch": "Navdanya Organic Food Cafe, Norfolk",
+                        "dinner": "Friends Shawarma, Norfolk",
+                        "accommodation": "Large studio all to yourself, Norfolk"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Norfolk to Lynchburg",
+                        "transportation": "Self-driving, from Norfolk to Lynchburg, Duration: 3h 27m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "Khyen Chyen, Lynchburg",
+                        "dinner": "Nutritious Nation, Lynchburg",
+                        "accommodation": "Blue House on the Hill, Lynchburg"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Lynchburg",
+                        "transportation": "-",
+                        "breakfast": "Nutritious Nation, Lynchburg",
+                        "attraction": "Amazement Square, Lynchburg;Riverfront Park, Lynchburg;Point of Honor, Lynchburg;",
+                        "lunch": "Shivam Corner, Lynchburg",
+                        "dinner": "Khyen Chyen, Lynchburg",
+                        "accommodation": "Blue House on the Hill, Lynchburg"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Lynchburg to Washington",
+                        "transportation": "Self-driving, from Lynchburg to Washington, Duration: 3h 19m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2090.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            6
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mediterranean is missing 2 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    },
+    "39": {
+        "constraint_type": "cuisine",
+        "data_idx": "39",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Sun Valley to San Diego",
+                        "transportation": "Self-driving, from Sun Valley to San Diego, Duration: 14 hours 9 mins, Distance: 1,461 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Burger King, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Meraki, San Diego",
+                        "attraction": "Balboa Park, San Diego;San Diego Zoo, San Diego;Seaport Village, San Diego;",
+                        "lunch": "Bun Intended, San Diego",
+                        "dinner": "Burgrill, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from San Diego to Redding",
+                        "transportation": "Self-driving, from San Diego to Redding, Duration: 10 hours 10 mins, Distance: 1,070 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Di Ghent Boulangerie, Redding",
+                        "accommodation": "Best Location Sun Filled West Village Townhome, Redding"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Redding",
+                        "transportation": "-",
+                        "breakfast": "Healthy Routes, Redding",
+                        "attraction": "Turtle Bay Exploration Park & Sundial Bridge, Redding;Lake Redding Park, Redding;McConnell Arboretum & Botanical Gardens, Redding;",
+                        "lunch": "The Junction, Redding",
+                        "dinner": "Mumbai Local, Redding",
+                        "accommodation": "Best Location Sun Filled West Village Townhome, Redding"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Redding to Sun Valley",
+                        "transportation": "Self-driving, from Redding to Sun Valley, Duration: 11 hours 13 mins, Distance: 1,087 km",
+                        "breakfast": "Milk n More, Redding",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2470.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Sun Valley to San Diego",
+                        "transportation": "Self-driving, from Sun Valley to San Diego, Duration: 14 hours 9 mins, Distance: 1,461 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Mosaic - Country Inn & Suites, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Meraki, San Diego",
+                        "attraction": "Balboa Park, San Diego; San Diego Zoo, San Diego; Seaport Village, San Diego;",
+                        "lunch": "Chawlas 2, San Diego",
+                        "dinner": "Duggal Snacks, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from San Diego to Redding",
+                        "transportation": "Self-driving, from San Diego to Redding, Duration: 10 hours 10 mins, Distance: 1,070 km",
+                        "breakfast": "Delhi 6 Foods, San Diego",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Mosaic - Country Inn & Suites, Redding",
+                        "accommodation": "Best Location Sun Filled West Village Townhome, Redding"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Redding",
+                        "transportation": "-",
+                        "breakfast": "Delhi 6 Foods, Redding",
+                        "attraction": "Turtle Bay Exploration Park & Sundial Bridge, Redding; Lake Redding Park, Redding; McConnell Arboretum & Botanical Gardens, Redding;",
+                        "lunch": "The Junction, Redding",
+                        "dinner": "Pindi, Redding",
+                        "accommodation": "Best Location Sun Filled West Village Townhome, Redding"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Redding to Sun Valley",
+                        "transportation": "Self-driving, from Redding to Sun Valley, Duration: 11 hours 13 mins, Distance: 1,087 km",
+                        "breakfast": "Connexions Bar - Crowne Plaza, Redding",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2470.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            6
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mediterranean is missing 4 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    },
+    "40": {
+        "constraint_type": "cuisine",
+        "data_idx": "40",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Philadelphia to Richmond",
+                        "transportation": "Flight Number: F3730367, from Philadelphia to Richmond, Departure Time: 14:03, Arrival Time: 15:03",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Number 31, Richmond",
+                        "accommodation": "Luxury NYC 1 Bed w/Gorgeous Views + Pool, Richmond"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "from Richmond to Petersburg",
+                        "transportation": "Self-driving, from Richmond to Petersburg, duration: 25 mins, cost: $1",
+                        "breakfast": "5 Little Pigs, Petersburg",
+                        "attraction": "Petersburg National Battlefield, Petersburg;Centre Hill Mansion-Museum, Petersburg;Pamplin Historical Park, Petersburg;",
+                        "lunch": "Tea'se Me - Rooftop Tea Boutique, Petersburg",
+                        "dinner": "Ghari Muradabadi Chicken Biryani, Petersburg",
+                        "accommodation": "Modern & Artsy, Awesome Location, Petersburg"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Petersburg to Charlottesville",
+                        "transportation": "Self-driving, from Petersburg to Charlottesville, duration: 1h 30m, cost: $7",
+                        "breakfast": "Boa Village, Charlottesville",
+                        "attraction": "Monticello, Charlottesville;Virginia Discovery Museum, Charlottesville;The Rotunda, Charlottesville;",
+                        "lunch": "Picasso Roof Top, Charlottesville",
+                        "dinner": "Mama's Fish House, Charlottesville",
+                        "accommodation": "Cozy and sunny Studio, Charlottesville"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "from Charlottesville to Philadelphia",
+                        "transportation": "Self-driving, from Charlottesville to Philadelphia, duration: 4h 24m, cost: $20",
+                        "breakfast": "Baking Bad, Charlottesville",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1710.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.3333333333333333
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Philadelphia to Richmond",
+                        "transportation": "Flight Number: F3730367, from Philadelphia to Richmond, Departure Time: 14:03, Arrival Time: 15:03",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "Eat All Nite, Richmond",
+                        "dinner": "Number 31, Richmond",
+                        "accommodation": "Luxury NYC 1 Bed w/Gorgeous Views + Pool, Richmond"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Richmond",
+                        "transportation": "-",
+                        "breakfast": "-",
+                        "attraction": "Virginia Museum of Fine Arts, Richmond;Maymont, Richmond;The Poe Museum, Richmond;",
+                        "lunch": "Hot & Spicy, Petersburg",
+                        "dinner": "5 Little Pigs, Petersburg",
+                        "accommodation": "Modern & Artsy, Awesome Location, Petersburg"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Richmond to Petersburg",
+                        "transportation": "Self-driving, from Richmond to Petersburg, duration: 25 mins",
+                        "breakfast": "Tea'se Me - Rooftop Tea Boutique, Petersburg",
+                        "attraction": "Petersburg National Battlefield, Petersburg;Centre Hill Mansion-Museum, Petersburg;Pamplin Historical Park, Petersburg;",
+                        "lunch": "-",
+                        "dinner": "Chick N Grills, Petersburg",
+                        "accommodation": "Modern & Artsy, Awesome Location, Petersburg"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "from Petersburg to Charlottesville",
+                        "transportation": "Self-driving, from Petersburg to Charlottesville, duration: 1h 30m",
+                        "breakfast": "-",
+                        "attraction": "Monticello, Charlottesville;Virginia Discovery Museum, Charlottesville;",
+                        "lunch": "Domino's Pizza, Charlottesville",
+                        "dinner": "Madras Cafe, Charlottesville",
+                        "accommodation": "Cozy and sunny Studio, Charlottesville"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "Charlottesville",
+                        "transportation": "-",
+                        "breakfast": "Shah Bakery, Charlottesville",
+                        "attraction": "The Rotunda, Charlottesville;Freedom of Speech Wall, Charlottesville;",
+                        "lunch": "Firefly, Charlottesville",
+                        "dinner": "Tales & Spirits, Charlottesville",
+                        "accommodation": "Cozy and sunny Studio, Charlottesville"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "Charlottesville",
+                        "transportation": "-",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Charlottesville to Philadelphia",
+                        "transportation": "Self-driving, from Charlottesville to Philadelphia, duration: 4h 24m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1710.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1710.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1710.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Fast Food",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.3333333333333333
+            }
+        ]
+    },
+    "43": {
+        "constraint_type": "cuisine",
+        "data_idx": "43",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Medford to Grand Junction",
+                        "transportation": "self-driving, from Medford to Grand Junction, duration: 15 hours 49 mins, distance: 1,640 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Cha Bar, Grand Junction",
+                        "accommodation": "Lovely 1 BD on the Upper West Side, Grand Junction"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Grand Junction",
+                        "transportation": "-",
+                        "breakfast": "Cha Bar, Grand Junction",
+                        "attraction": "Museum of the West, Museums of Western Colorado, Grand Junction;Western Colorado Botanical Gardens, Grand Junction;James M. Robb - Colorado River State Park, Grand Junction;",
+                        "lunch": "2 Dog, Grand Junction",
+                        "dinner": "Cocoa Tree, Grand Junction",
+                        "accommodation": "Lovely 1 BD on the Upper West Side, Grand Junction"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Grand Junction to Durango",
+                        "transportation": "self-driving, from Grand Junction to Durango, duration: 3 hours 33 mins, distance: 269 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Natural Ice Cream, Durango",
+                        "accommodation": "Lux 1BR in the heart of NYC Theater district!, Durango"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Durango",
+                        "transportation": "-",
+                        "breakfast": "Natural Ice Cream, Durango",
+                        "attraction": "Durango & Silverton Narrow Gauge Railroad, Durango;Oxbow Park and Preserve, Durango;Animas Museum, Durango;",
+                        "lunch": "Asian Haus, Durango",
+                        "dinner": "Samurai Japanese Cuisine & Sushi Bar, Durango",
+                        "accommodation": "Lux 1BR in the heart of NYC Theater district!, Durango"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Durango to Gunnison",
+                        "transportation": "self-driving, from Durango to Gunnison, duration: 3 hours 47 mins, distance: 275 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Timboo Cafe, Gunnison",
+                        "accommodation": "Full-size loft bed in East Village, Gunnison"
+                    },
+                    {
+                        "days": 6,
+                        "current_city": "Gunnison",
+                        "transportation": "-",
+                        "breakfast": "Timboo Cafe, Gunnison",
+                        "attraction": "Black Canyon of the Gunnison National Park, Gunnison;Gunnison Pioneer Museum, Gunnison;Hartman Rocks, Gunnison;",
+                        "lunch": "Basil & Thyme, Gunnison",
+                        "dinner": "Social on Main, Gunnison",
+                        "accommodation": "Full-size loft bed in East Village, Gunnison"
+                    },
+                    {
+                        "days": 7,
+                        "current_city": "from Gunnison to Medford",
+                        "transportation": "self-driving, from Gunnison to Medford, duration: 18 hours 4 mins, distance: 1,832 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2280.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2280.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2280.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.0
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Medford to Grand Junction",
+                        "transportation": "self-driving, from Medford to Grand Junction, duration: 15h49m, distance: 1,640km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Pind Balluchi, Grand Junction",
+                        "accommodation": "Lovely 1 BD on the Upper West Side, Grand Junction"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Grand Junction",
+                        "transportation": "-",
+                        "breakfast": "Cha Bar, Grand Junction",
+                        "attraction": "Museum of the West, Grand Junction;Western Colorado Botanical Gardens, Grand Junction;",
+                        "lunch": "Pind Balluchi, Grand Junction",
+                        "dinner": "Pind Balluchi, Grand Junction",
+                        "accommodation": "Lovely 1 BD on the Upper West Side, Grand Junction"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Grand Junction to Durango",
+                        "transportation": "self-driving, from Grand Junction to Durango, duration: 3h33m, distance: 269km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Standard Chicken Point, Durango",
+                        "accommodation": "Lux 1BR in NYC Theater District, Durango"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Durango",
+                        "transportation": "-",
+                        "breakfast": "Standard Chicken Point, Durango",
+                        "attraction": "Durango & Silverton Railroad, Durango;Oxbow Park, Durango;",
+                        "lunch": "Standard Chicken Point, Durango",
+                        "dinner": "Standard Chicken Point, Durango",
+                        "accommodation": "Lux 1BR in NYC Theater District, Durango"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Durango to Gunnison",
+                        "transportation": "self-driving, from Durango to Gunnison, duration: 3h47m, distance: 275km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Tughlaq, Gunnison",
+                        "accommodation": "Full-size loft bed in East Village, Gunnison"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "Gunnison",
+                        "transportation": "-",
+                        "breakfast": "Tughlaq, Gunnison",
+                        "attraction": "Black Canyon NP, Gunnison;Gunnison Pioneer Museum, Gunnison;",
+                        "lunch": "Tughlaq, Gunnison",
+                        "dinner": "Tughlaq, Gunnison",
+                        "accommodation": "Full-size loft bed in East Village, Gunnison"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Gunnison to Medford",
+                        "transportation": "self-driving, from Gunnison to Medford, duration: 18h4m, distance: 1,832km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2280.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2280.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 1,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2280.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mexican",
+                            12
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mexican is missing 8 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.0
+            }
+        ]
+    },
+    "72": {
+        "constraint_type": "cuisine",
+        "data_idx": "72",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Dallas to Huntsville",
+                        "transportation": "Flight Number: F3601769, from Dallas to Huntsville, Departure Time: 17:14, Arrival Time: 18:57",
+                        "breakfast": "-",
+                        "attraction": "U.S. Space & Rocket Center, Huntsville;Big Spring International Park, Huntsville;",
+                        "lunch": "Cherry Comet, Huntsville",
+                        "dinner": "Downtown Grill, Huntsville",
+                        "accommodation": "Sonder | 116 John | Simple 1BR + Gym, Huntsville"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Huntsville",
+                        "transportation": "-",
+                        "breakfast": "Downtown Grill, Huntsville",
+                        "attraction": "Huntsville Botanical Garden, Huntsville;Monte Sano State Park, Huntsville;",
+                        "lunch": "Hunger Strike, Huntsville",
+                        "dinner": "Moksh The Restro Lounge, Huntsville",
+                        "accommodation": "Sonder | 116 John | Simple 1BR + Gym, Huntsville"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Huntsville to Dallas",
+                        "transportation": "Flight Number: F3607633, from Huntsville to Dallas, Departure Time: 09:26, Arrival Time: 11:26",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2565.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 4,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Dallas to Huntsville",
+                        "transportation": "Flight Number: F3601769, from Dallas to Huntsville, Departure Time: 17:14, Arrival Time: 18:57",
+                        "breakfast": "-",
+                        "attraction": "U.S. Space & Rocket Center, Huntsville;Big Spring International Park, Huntsville;",
+                        "lunch": "Frozen Grillz, Huntsville",
+                        "dinner": "Frozen Grillz, Huntsville",
+                        "accommodation": "Sonder | 116 John | Simple 1BR + Gym, Huntsville"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Huntsville",
+                        "transportation": "-",
+                        "breakfast": "Frozen Grillz, Huntsville",
+                        "attraction": "Huntsville Botanical Garden, Huntsville;Monte Sano State Park, Huntsville;",
+                        "lunch": "Hunger Strike, Huntsville",
+                        "dinner": "Moksh The Restro Lounge, Huntsville",
+                        "accommodation": "Sonder | 116 John | Simple 1BR + Gym, Huntsville"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Huntsville to Dallas",
+                        "transportation": "Flight Number: F3607633, from Huntsville to Dallas, Departure Time: 09:26, Arrival Time: 11:26",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2565.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 4,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Chinese",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "74": {
+        "constraint_type": "cuisine",
+        "data_idx": "74",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Jacksonville to Washington",
+                        "transportation": "Flight Number: F3905661, from Jacksonville to Washington, Departure Time: 07:29, Arrival Time: 09:11",
+                        "breakfast": "Hearken Caf\u00e9, Washington",
+                        "attraction": "Space Needle, Washington;Chihuly Garden and Glass, Washington;",
+                        "lunch": "Thaaliwala, Washington",
+                        "dinner": "The Hangar, Washington",
+                        "accommodation": "Stunning 2Bed/2BA + 300sqft deck by the river!, Washington"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Washington",
+                        "transportation": "-",
+                        "breakfast": "Hearken Caf\u00e9, Washington",
+                        "attraction": "Seattle Aquarium, Washington;Olympic Sculpture Park, Washington;Kerry Park, Washington;",
+                        "lunch": "Good Foods, Washington",
+                        "dinner": "Thaaliwala, Washington",
+                        "accommodation": "Stunning 2Bed/2BA + 300sqft deck by the river!, Washington"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Washington to Jacksonville",
+                        "transportation": "Flight Number: F4071100, from Washington to Jacksonville, Departure Time: 17:19, Arrival Time: 19:20",
+                        "breakfast": "The Hangar, Washington",
+                        "attraction": "Pike Place Market, Washington;The Seattle Great Wheel, Washington;",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 950.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.25
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Jacksonville to Washington",
+                        "transportation": "Flight Number: F3905661, from Jacksonville to Washington, Departure Time: -, Arrival Time: -",
+                        "breakfast": "Baskin Robbins (Bakery), Washington",
+                        "attraction": "Space Needle, Washington;Chihuly Garden and Glass, Washington;",
+                        "lunch": "Shiv Dhaba (Bakery), Washington",
+                        "dinner": "The Hangar, Washington",
+                        "accommodation": "Stunning 2Bed/2BA + 300sqft deck by the river!, Washington"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Washington",
+                        "transportation": "-",
+                        "breakfast": "Baskin Robbins (Bakery), Washington",
+                        "attraction": "Seattle Aquarium, Washington;Olympic Sculpture Park, Washington;Kerry Park, Washington;",
+                        "lunch": "Los Aztecas (Bakery), Washington",
+                        "dinner": "Thaaliwala, Washington",
+                        "accommodation": "Stunning 2Bed/2BA + 300sqft deck by the river!, Washington"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Washington to Jacksonville",
+                        "transportation": "Flight Number: F4071100, from Washington to Jacksonville, Departure Time: -, Arrival Time: -",
+                        "breakfast": "Good Foods (Bakery), Washington",
+                        "attraction": "Pike Place Market, Washington;The Seattle Great Wheel, Washington;",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 950.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Bakery",
+                            2
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Bakery is missing 2 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.25
+            }
+        ]
+    },
+    "83": {
+        "constraint_type": "cuisine",
+        "data_idx": "83",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Greer to Buffalo",
+                        "transportation": "Self-driving, from Greer to Buffalo, Departure Time: -, Arrival Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Red Mango, Buffalo",
+                        "accommodation": "Cozy Studio in Heart of Ft Greene, Buffalo"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Buffalo",
+                        "transportation": "-",
+                        "breakfast": "Red Mango, Buffalo",
+                        "attraction": "The Buffalo Zoo, Buffalo;Buffalo AKG Art Museum, Buffalo;Canalside, Buffalo;",
+                        "lunch": "Big Fish Eatery, Buffalo",
+                        "dinner": "The Zuree Urban Kitchen, Buffalo",
+                        "accommodation": "Cozy Studio in Heart of Ft Greene, Buffalo"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Buffalo to Niagara Falls",
+                        "transportation": "Self-driving, from Buffalo to Niagara Falls, Departure Time: -, Arrival Time: -",
+                        "breakfast": "The Zuree Urban Kitchen, Buffalo",
+                        "attraction": "Journey Behind the Falls, Niagara Falls;Niagara SkyWheel, Niagara Falls;Queen Victoria Park, Niagara Falls;",
+                        "lunch": "Scratch, Niagara Falls",
+                        "dinner": "DIOS The Neighbourhood Bistro, Niagara Falls",
+                        "accommodation": "Sunny Spacious South Slope Studio, Niagara Falls"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Niagara Falls",
+                        "transportation": "-",
+                        "breakfast": "DIOS The Neighbourhood Bistro, Niagara Falls",
+                        "attraction": "Maid of the Mist Boat Tour, Niagara Falls;Skylon Tower, Niagara Falls;Niagara Falls Observation Tower, Niagara Falls;",
+                        "lunch": "Little Punjab, Niagara Falls",
+                        "dinner": "Giapo, Niagara Falls",
+                        "accommodation": "Sunny Spacious South Slope Studio, Niagara Falls"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Niagara Falls to Greer",
+                        "transportation": "Self-driving, from Niagara Falls to Greer, Departure Time: -, Arrival Time: -",
+                        "breakfast": "Giapo, Niagara Falls",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": false,
+                        "error_message": "The room type should be private room."
+                    },
+                    "budget": {
+                        "query_value": 3230.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Greer to Buffalo",
+                        "transportation": "Self-driving, from Greer to Buffalo, Departure Time: -, Arrival Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Red Mango, Buffalo",
+                        "accommodation": "Cozy Studio in Heart of Ft Greene, Buffalo"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Buffalo",
+                        "transportation": "-",
+                        "breakfast": "Red Mango, Buffalo",
+                        "attraction": "The Buffalo Zoo, Buffalo;Buffalo AKG Art Museum, Buffalo;Canalside, Buffalo;",
+                        "lunch": "Big Fish Eatery, Buffalo",
+                        "dinner": "The Zuree Urban Kitchen, Buffalo",
+                        "accommodation": "Cozy Studio in Heart of Ft Greene, Buffalo"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Buffalo to Niagara Falls",
+                        "transportation": "Self-driving, from Buffalo to Niagara Falls, Departure Time: -, Arrival Time: -",
+                        "breakfast": "The Zuree Urban Kitchen, Buffalo",
+                        "attraction": "Journey Behind the Falls, Niagara Falls;Niagara SkyWheel, Niagara Falls;Queen Victoria Park, Niagara Falls;",
+                        "lunch": "Little Punjab, Niagara Falls",
+                        "dinner": "DIOS The Neighbourhood Bistro, Niagara Falls",
+                        "accommodation": "Sunny Spacious South Slope Studio, Niagara Falls"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Niagara Falls",
+                        "transportation": "-",
+                        "breakfast": "DIOS The Neighbourhood Bistro, Niagara Falls",
+                        "attraction": "Maid of the Mist Boat Tour, Niagara Falls;Skylon Tower, Niagara Falls;Niagara Falls Observation Tower, Niagara Falls;",
+                        "lunch": "Little Punjab, Niagara Falls",
+                        "dinner": "Giapo, Niagara Falls",
+                        "accommodation": "Sunny Spacious South Slope Studio, Niagara Falls"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Niagara Falls to Greer",
+                        "transportation": "Self-driving, from Niagara Falls to Greer, Departure Time: -, Arrival Time: -",
+                        "breakfast": "Giapo, Niagara Falls",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": false,
+                        "error_message": "The room type should be private room."
+                    },
+                    "budget": {
+                        "query_value": 3230.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mediterranean is missing 2 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "91": {
+        "constraint_type": "cuisine",
+        "data_idx": "91",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from New Orleans to Miami",
+                        "transportation": "Flight Number: F3686109, from New Orleans to Miami, Departure Time: 18:47, Arrival Time: 21:57",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "AB's Absolute Barbecues, Miami",
+                        "accommodation": "Simple and clean bedroom with good view and light, Miami"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Miami",
+                        "transportation": "-",
+                        "breakfast": "AB's - Absolute Barbecues, Miami",
+                        "attraction": "P\u00e9rez Art Museum Miami, Miami;Vizcaya Museum & Gardens, Miami;Wynwood Walls, Miami;",
+                        "lunch": "Shorts Burger and Shine, Miami",
+                        "dinner": "Clocked, Miami",
+                        "accommodation": "Simple and clean bedroom with good view and light, Miami"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Miami to Tampa",
+                        "transportation": "Flight Number: F3670101, from Miami to Tampa, Departure Time: 09:44, Arrival Time: 10:38",
+                        "breakfast": "-",
+                        "attraction": "Busch Gardens Tampa Bay, Tampa;ZooTampa at Lowry Park, Tampa;Tampa Museum of Art, Tampa;",
+                        "lunch": "The Tin Cow, Tampa",
+                        "dinner": "Kobe Hibachi & Sushi, Tampa",
+                        "accommodation": "Spacious 1+ bedroom apt in NYC, Tampa"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "from Tampa to New Orleans",
+                        "transportation": "Flight Number: F4007107, from Tampa to New Orleans, Departure Time: 06:58, Arrival Time: 07:30",
+                        "breakfast": "Giani's, Tampa",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": false,
+                        "error_message": "The room type should be entire room."
+                    },
+                    "budget": {
+                        "query_value": 3990.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 3990.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 3990.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from New Orleans to Miami",
+                        "transportation": "Flight Number: F3686109, from New Orleans to Miami, Departure Time: 18:47, Arrival Time: 21:57",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "BarShala, Miami",
+                        "accommodation": "Unbeatable & Massive Midtown 3 Bedroom Apt, Miami"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Miami",
+                        "transportation": "-",
+                        "breakfast": "Moju Juice Bar, Miami",
+                        "attraction": "P\u00e9rez Art Museum Miami, Miami;Vizcaya Museum & Gardens, Miami;Wynwood Walls, Miami;",
+                        "lunch": "Shorts Burger and Shine, Miami",
+                        "dinner": "Clocked, Miami",
+                        "accommodation": "Unbeatable & Massive Midtown 3 Bedroom Apt, Miami"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Miami to Tampa",
+                        "transportation": "Flight Number: F3670101, from Miami to Tampa, Departure Time: 09:44, Arrival Time: 10:38",
+                        "breakfast": "-",
+                        "attraction": "Busch Gardens Tampa Bay, Tampa;ZooTampa at Lowry Park, Tampa;Tampa Museum of Art, Tampa;",
+                        "lunch": "Chaayos, Tampa",
+                        "dinner": "Kobe Hibachi & Sushi, Tampa",
+                        "accommodation": "Spacious 1+ bedroom apt in NYC, Tampa"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Tampa",
+                        "transportation": "-",
+                        "breakfast": "Brown Town, Tampa",
+                        "attraction": "Ybor City Museum State Park, Tampa;Ballast Point Park, Tampa;",
+                        "lunch": "Republic of Chicken, Tampa",
+                        "dinner": "The Tin Cow, Tampa",
+                        "accommodation": "Spacious 1+ bedroom apt in NYC, Tampa"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Tampa to New Orleans",
+                        "transportation": "Flight Number: F4007107, from Tampa to New Orleans, Departure Time: 06:58, Arrival Time: 07:30",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 3990.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 3990.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 3990.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "115": {
+        "constraint_type": "cuisine",
+        "data_idx": "115",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Provo to San Diego",
+                        "transportation": "Self-driving, from Provo to San Diego, Departure Time: -, Arrival Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Bun Intended, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Bun Intended, San Diego",
+                        "attraction": "San Diego Zoo, San Diego;Balboa Park, San Diego;USS Midway Museum, San Diego;",
+                        "lunch": "Meraki, San Diego",
+                        "dinner": "Dragon Way, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from San Diego to Santa Ana",
+                        "transportation": "Self-driving, from San Diego to Santa Ana, Departure Time: -, Arrival Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "The Bee's Knees, Santa Ana",
+                        "accommodation": "Stunning designer loft in the heart of Downtown, Santa Ana"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Santa Ana",
+                        "transportation": "-",
+                        "breakfast": "The Bee's Knees, Santa Ana",
+                        "attraction": "Discovery Science Center, Santa Ana;Downtown Santa Ana Historic District, Santa Ana;Bowers Museum, Santa Ana;",
+                        "lunch": "Nawras Seafood Restaurant, Santa Ana",
+                        "dinner": "Dirty Apron, Santa Ana",
+                        "accommodation": "Stunning designer loft in the heart of Downtown, Santa Ana"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Santa Ana to Bakersfield",
+                        "transportation": "Self-driving, from Santa Ana to Bakersfield, Departure Time: -, Arrival Time: -",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Pind Balluchi, Bakersfield",
+                        "accommodation": "Cozy 2 Bedroom Condominium, Bakersfield"
+                    },
+                    {
+                        "days": 6,
+                        "current_city": "Bakersfield",
+                        "transportation": "-",
+                        "breakfast": "Cottage Caf\u00e9 by Smoothie factory, Bakersfield",
+                        "attraction": "Kern County Museum, Bakersfield;Central Park at Mill Creek, Bakersfield;Bakersfield Museum of Art, Bakersfield;",
+                        "lunch": "DePalma's Italian Cafe - East Side, Bakersfield",
+                        "dinner": "Samridhi, Bakersfield",
+                        "accommodation": "Cozy 2 Bedroom Condominium, Bakersfield"
+                    },
+                    {
+                        "days": 7,
+                        "current_city": "from Bakersfield to Provo",
+                        "transportation": "Self-driving, from Bakersfield to Provo, Departure Time: -, Arrival Time: -",
+                        "breakfast": "Samridhi, Bakersfield",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": false,
+                        "error_message": "Accommodation Luxury 4BR Home, Spacious & Central to Trains does not meet the house rule of parties."
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 14155.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 5,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.0
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Provo to San Diego",
+                        "transportation": "Self-driving, from Provo to San Diego, duration: 10h13m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Bun Intended, San Diego",
+                        "accommodation": "Luxury 4BR Home, San Diego"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Bun Intended, San Diego",
+                        "attraction": "San Diego Zoo, San Diego;Balboa Park, San Diego;USS Midway Museum, San Diego",
+                        "lunch": "Meraki, San Diego",
+                        "dinner": "Dragon Way, San Diego",
+                        "accommodation": "Luxury 4BR Home, San Diego"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from San Diego to Santa Ana",
+                        "transportation": "Self-driving, from San Diego to Santa Ana, duration: 1h26m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Nawras Seafood Restaurant, Santa Ana",
+                        "accommodation": "Stunning designer loft, Santa Ana"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Santa Ana",
+                        "transportation": "-",
+                        "breakfast": "Nawras Seafood Restaurant, Santa Ana",
+                        "attraction": "Discovery Science Center, Santa Ana;Downtown Historic District, Santa Ana;Bowers Museum, Santa Ana",
+                        "lunch": "Food Campus, Santa Ana",
+                        "dinner": "Food Campus, Santa Ana",
+                        "accommodation": "Stunning designer loft, Santa Ana"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "Santa Ana",
+                        "transportation": "-",
+                        "breakfast": "Food Campus, Santa Ana",
+                        "attraction": "Santa Ana Zoo, Santa Ana;Heritage Museum, Santa Ana;Santiago Park, Santa Ana",
+                        "lunch": "Nawras Seafood Restaurant, Santa Ana",
+                        "dinner": "Nawras Seafood Restaurant, Santa Ana",
+                        "accommodation": "Stunning designer loft, Santa Ana"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "from Santa Ana to Bakersfield",
+                        "transportation": "Self-driving, from Santa Ana to Bakersfield, duration: 2h31m",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Pind Balluchi, Bakersfield",
+                        "accommodation": "Cozy 2 Bedroom Condominium, Bakersfield"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Bakersfield to Provo",
+                        "transportation": "Self-driving, from Bakersfield to Provo, duration: 9h34m",
+                        "breakfast": "Pind Balluchi, Bakersfield",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": false,
+                        "error_message": "Accommodation Cozy 2 Bedroom Condominium does not meet the house rule of parties."
+                    },
+                    "transportation": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 14155.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 14155.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 5,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 14155.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            14
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mediterranean is missing 11 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.0
+            }
+        ]
+    },
+    "123": {
+        "constraint_type": "cuisine",
+        "data_idx": "123",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Atlanta to Knoxville",
+                        "transportation": "Flight Number: F3645549, from Atlanta to Knoxville, Departure Time: 08:13, Arrival Time: 09:00",
+                        "breakfast": "-",
+                        "attraction": "World's Fair Park, Knoxville;Sunsphere, Knoxville;Knoxville Walking Tours, Knoxville;",
+                        "lunch": "Mamagoto, Knoxville",
+                        "dinner": "Les 3 Brasseurs, Knoxville",
+                        "accommodation": "Cozy Private Room in Chinatown/Lower East Side, Knoxville"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Knoxville",
+                        "transportation": "-",
+                        "breakfast": "Biryani By Kilo, Knoxville",
+                        "attraction": "Zoo Knoxville, Knoxville;Knoxville Botanical Garden and Arboretum, Knoxville;Ijams Nature Center, Knoxville;",
+                        "lunch": "Open Kitchen, Knoxville",
+                        "dinner": "Burger Planet, Knoxville",
+                        "accommodation": "Cozy Private Room in Chinatown/Lower East Side, Knoxville"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Knoxville to Atlanta",
+                        "transportation": "Flight Number: F3517130, from Knoxville to Atlanta, Departure Time: 05:32, Arrival Time: 06:28",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 950.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Atlanta to Knoxville",
+                        "transportation": "Flight Number: F3645549, from Atlanta to Knoxville, Departure Time: 08:13, Arrival Time: 09:00",
+                        "breakfast": "-",
+                        "attraction": "World's Fair Park, Knoxville;Sunsphere, Knoxville;Knoxville Walking Tours, Knoxville;",
+                        "lunch": "TcozY, Knoxville",
+                        "dinner": "TcozY, Knoxville",
+                        "accommodation": "Cozy Private Room in Chinatown/Lower East Side, Knoxville"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Knoxville",
+                        "transportation": "-",
+                        "breakfast": "Biryani By Kilo, Knoxville",
+                        "attraction": "Zoo Knoxville, Knoxville;Knoxville Botanical Garden and Arboretum, Knoxville;Ijams Nature Center, Knoxville;",
+                        "lunch": "Mamagoto, Knoxville",
+                        "dinner": "Les 3 Brasseurs, Knoxville",
+                        "accommodation": "Cozy Private Room in Chinatown/Lower East Side, Knoxville"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Knoxville to Atlanta",
+                        "transportation": "Flight Number: F3517130, from Knoxville to Atlanta, Departure Time: 05:32, Arrival Time: 06:28",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 950.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 950.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mexican",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    },
+    "126": {
+        "constraint_type": "cuisine",
+        "data_idx": "126",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Daytona Beach to Atlanta",
+                        "transportation": "Flight Number: F3524617, from Daytona Beach to Atlanta, Departure Time: 13:13, Arrival Time: 14:35",
+                        "breakfast": "-",
+                        "attraction": "World of Coca-Cola, Atlanta;Centennial Olympic Park, Atlanta;",
+                        "lunch": "Daawat-e-Kashmir, Atlanta",
+                        "dinner": "Baba Au Rhum, Atlanta",
+                        "accommodation": "Spacious private room close St. Barnabas Hospital, Atlanta"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Atlanta",
+                        "transportation": "-",
+                        "breakfast": "Taste of Vishal, Atlanta",
+                        "attraction": "Georgia Aquarium, Atlanta;Piedmont Park, Atlanta;",
+                        "lunch": "Sethi's Restaurant & Barbeque, Atlanta",
+                        "dinner": "Saut\u6106ed Stories, Atlanta",
+                        "accommodation": "Spacious private room close St. Barnabas Hospital, Atlanta"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Atlanta to Daytona Beach",
+                        "transportation": "Flight Number: F3544567, from Atlanta to Daytona Beach, Departure Time: 21:18, Arrival Time: 22:32",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": false,
+                        "error_message": "The transportation should not be no flight."
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": false,
+                        "error_message": "The room type should be entire room."
+                    },
+                    "budget": {
+                        "query_value": 1995.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.8333333333333334
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Daytona Beach to Atlanta",
+                        "transportation": "self-driving, from Daytona Beach to Atlanta, duration: 6 hours 18 mins, distance: 696 km",
+                        "breakfast": "-",
+                        "attraction": "World of Coca-Cola, Atlanta;Centennial Olympic Park, Atlanta;",
+                        "lunch": "Chaina Ram Sindhi Confectioners, Atlanta",
+                        "dinner": "Punjab Restaurant, Atlanta",
+                        "accommodation": "Unique 2BR Apartment, Atlanta"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Atlanta",
+                        "transportation": "-",
+                        "breakfast": "Taste of Vishal, Atlanta",
+                        "attraction": "Georgia Aquarium, Atlanta;Piedmont Park, Atlanta;",
+                        "lunch": "Punjab Restaurant, Atlanta",
+                        "dinner": "Chaina Ram Sindhi Confectioners, Atlanta",
+                        "accommodation": "Unique 2BR Apartment, Atlanta"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Atlanta to Daytona Beach",
+                        "transportation": "self-driving, from Atlanta to Daytona Beach, duration: 6 hours 20 mins, distance: 706 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": false,
+                        "error_message": "Accommodation Unique 2BR Apartment does not meet the house rule of children under 10."
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1995.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.8333333333333334
+            }
+        ]
+    },
+    "136": {
+        "constraint_type": "cuisine",
+        "data_idx": "136",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from [Origin] to Philadelphia",
+                        "transportation": "Flight Number: F3794475, from [Origin] to Philadelphia, Departure Time: 07:44, Arrival Time: 09:08",
+                        "breakfast": "Asian Chopstick, Philadelphia",
+                        "attraction": "Independence National Historical Park, Philadelphia;Liberty Bell, Philadelphia;JFK Plaza (Love Park), Philadelphia;",
+                        "lunch": "Bangla Sweet Corner, Philadelphia",
+                        "dinner": "Red Ginger Sushi, Grill & Bar, Philadelphia",
+                        "accommodation": "Industrial Loft Living in NYC, Philadelphia"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Philadelphia",
+                        "transportation": "-",
+                        "breakfast": "Gurdas Ram Jalebi Wala, Philadelphia",
+                        "attraction": "Philadelphia Museum of Art, Philadelphia;The Franklin Institute, Philadelphia;Eastern State Penitentiary, Philadelphia;Franklin Square, Philadelphia;",
+                        "lunch": "Red Mesa Cantina, Philadelphia",
+                        "dinner": "Pizza Hut, Philadelphia",
+                        "accommodation": "Industrial Loft Living in NYC, Philadelphia"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Philadelphia to [Destination]",
+                        "transportation": "Flight Number: F3793489, from Philadelphia to [Destination], Departure Time: 10:37, Arrival Time: 12:28",
+                        "breakfast": "The Moon Under Water, Philadelphia",
+                        "attraction": "Museum of the American Revolution, Philadelphia;",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": false,
+                        "error_message": "The room type should be private room."
+                    },
+                    "budget": {
+                        "query_value": 1900.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Cincinnati to Philadelphia",
+                        "transportation": "Flight Number: F3794475, from Cincinnati to Philadelphia, Departure Time: 07:44, Arrival Time: 09:08",
+                        "breakfast": "The Moon Under Water, Philadelphia",
+                        "attraction": "Independence National Historical Park, Philadelphia;Liberty Bell, Philadelphia;JFK Plaza (Love Park), Philadelphia;",
+                        "lunch": "Mini Mughal, Philadelphia",
+                        "dinner": "The Moon Under Water, Philadelphia",
+                        "accommodation": "Top floor of an amazing duplex, Philadelphia"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Philadelphia",
+                        "transportation": "-",
+                        "breakfast": "Red Ginger Sushi, Philadelphia",
+                        "attraction": "Philadelphia Museum of Art, Philadelphia;The Franklin Institute, Philadelphia;Eastern State Penitentiary, Philadelphia;",
+                        "lunch": "Red Mesa Cantina, Philadelphia",
+                        "dinner": "Hippopotamus - Museum Hotel, Philadelphia",
+                        "accommodation": "Top floor of an amazing duplex, Philadelphia"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Philadelphia to Cincinnati",
+                        "transportation": "Flight Number: F3793489, from Philadelphia to Cincinnati, Departure Time: 10:37, Arrival Time: 12:28",
+                        "breakfast": "Baker Street, Philadelphia",
+                        "attraction": "Museum of the American Revolution, Philadelphia;",
+                        "lunch": "Gurdas Ram Jalebi Wala, Philadelphia",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1900.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1900.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1900.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    },
+    "138": {
+        "constraint_type": "cuisine",
+        "data_idx": "138",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Fort Wayne to Charlotte",
+                        "transportation": "Flight Number: F3732158, from Fort Wayne to Charlotte, Departure Time: 06:27, Arrival Time: 08:16",
+                        "breakfast": "Prince Snacks & Momo's Point, Charlotte",
+                        "attraction": "Levine Museum of the New South, Charlotte;Discovery Place Science, Charlotte;Romare Bearden Park, Charlotte;",
+                        "lunch": "Life Grand Cafe, Charlotte",
+                        "dinner": "Tuk Tuk Indian Street Food, Charlotte",
+                        "accommodation": "Luxury 2 bdr/2 bath prime Williamburg, Charlotte"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Charlotte",
+                        "transportation": "-",
+                        "breakfast": "Olive Tree Cafe, Charlotte",
+                        "attraction": "NASCAR Hall of Fame, Charlotte;Freedom Park, Charlotte;UNC Charlotte Botanical Gardens, Charlotte;",
+                        "lunch": "Burger King, Charlotte",
+                        "dinner": "Legends Barbeques, Charlotte",
+                        "accommodation": "Luxury 2 bdr/2 bath prime Williamburg, Charlotte"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Charlotte to Fort Wayne",
+                        "transportation": "Flight Number: F3735822, from Charlotte to Fort Wayne, Departure Time: 20:28, Arrival Time: 22:12",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "pets",
+                        "is_correct": false,
+                        "error_message": "Accommodation Luxury 2 bdr/2 bath prime Williamburg does not meet the house rule of pets."
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": false,
+                        "error_message": "The transportation should not be no flight."
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1805.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1805.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.8333333333333334
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Fort Wayne to Charlotte",
+                        "transportation": "self-driving, from Fort Wayne to Charlotte, duration: 9 hours 15 mins, distance: 938 km",
+                        "breakfast": "-",
+                        "attraction": "Discovery Place Science, Charlotte;Romare Bearden Park, Charlotte;",
+                        "lunch": "Unplugged Courtyard, Charlotte",
+                        "dinner": "Unplugged Courtyard, Charlotte",
+                        "accommodation": "Luxury 2 bdr/2 bath prime Williamburg, Charlotte"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Charlotte",
+                        "transportation": "-",
+                        "breakfast": "Unplugged Courtyard, Charlotte",
+                        "attraction": "NASCAR Hall of Fame, Charlotte;Freedom Park, Charlotte;",
+                        "lunch": "Pind Balluchi, Charlotte",
+                        "dinner": "Pind Balluchi, Charlotte",
+                        "accommodation": "Luxury 2 bdr/2 bath prime Williamburg, Charlotte"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Charlotte to Fort Wayne",
+                        "transportation": "self-driving, from Charlotte to Fort Wayne, duration: 9 hours 18 mins, distance: 939 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "pets",
+                        "is_correct": false,
+                        "error_message": "Accommodation Luxury 2 bdr/2 bath prime Williamburg does not meet the house rule of pets."
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1805.0,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "French",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.8333333333333334
+            }
+        ]
+    },
+    "146": {
+        "constraint_type": "cuisine",
+        "data_idx": "146",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Grand Junction to Phoenix",
+                        "transportation": "Flight Number: F3804712, from Grand Junction to Phoenix, Departure Time: 05:50, Arrival Time: 06:23",
+                        "breakfast": "-",
+                        "attraction": "Phoenix Zoo, Phoenix;Desert Botanical Garden, Phoenix;",
+                        "lunch": "Mama Loca, Phoenix",
+                        "dinner": "Subway, Phoenix",
+                        "accommodation": "1 BR in Carroll Gardens Townhouse, Phoenix"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Phoenix",
+                        "transportation": "-",
+                        "breakfast": "Subway, Phoenix",
+                        "attraction": "Phoenix Art Museum, Phoenix;The Japanese Friendship Garden of Phoenix, Phoenix;",
+                        "lunch": "Vero Gusto, Phoenix",
+                        "dinner": "Jungle The Restaurant, Phoenix",
+                        "accommodation": "1 BR in Carroll Gardens Townhouse, Phoenix"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Phoenix to Tucson",
+                        "transportation": "Flight Number: F3798596, from Phoenix to Tucson, Departure Time: 18:38, Arrival Time: 19:19",
+                        "breakfast": "Jungle The Restaurant, Phoenix",
+                        "attraction": "Arizona-Sonora Desert Museum, Tucson;San Xavier del Bac Mission, Tucson;",
+                        "lunch": "Canteen Till I Die, Tucson",
+                        "dinner": "Villa Tevere, Tucson",
+                        "accommodation": "Cozy place to stay 7 minutes from Manhattan..., Tucson"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Tucson",
+                        "transportation": "-",
+                        "breakfast": "Villa Tevere, Tucson",
+                        "attraction": "Tucson Botanical Gardens, Tucson;Pima Air & Space Museum, Tucson;",
+                        "lunch": "Mood 4 Food, Tucson",
+                        "dinner": "La Plage, Tucson",
+                        "accommodation": "Cozy place to stay 7 minutes from Manhattan..., Tucson"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Tucson to Grand Junction",
+                        "transportation": "Self-driving, from Tucson to Grand Junction, Duration: 10h 36m, Distance: 1,113 km",
+                        "breakfast": "La Plage, Tucson",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "visitors",
+                        "is_correct": false,
+                        "error_message": "Accommodation 1 BR in Carroll Gardens Townhouse does not meet the house rule of visitors."
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": false,
+                        "error_message": "The transportation should not be no flight."
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1995.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1995.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1995.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Grand Junction to Phoenix",
+                        "transportation": "Self-driving, from Grand Junction to Phoenix, Duration: 9h 11m, Distance: 934 km",
+                        "breakfast": "-",
+                        "attraction": "Papago Park, Phoenix;Hole in the Rock, Phoenix;",
+                        "lunch": "Subway, Phoenix",
+                        "dinner": "Giani's, Phoenix",
+                        "accommodation": "1 BR in Carroll Gardens Townhouse, Phoenix"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Phoenix",
+                        "transportation": "-",
+                        "breakfast": "Giani's, Phoenix",
+                        "attraction": "Phoenix Art Museum, Phoenix;The Japanese Friendship Garden, Phoenix;",
+                        "lunch": "Vero Gusto, Phoenix",
+                        "dinner": "Enigma Lounge, Phoenix",
+                        "accommodation": "1 BR in Carroll Gardens Townhouse, Phoenix"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Phoenix to Tucson",
+                        "transportation": "Self-driving, from Phoenix to Tucson, Duration: 1h 44m, Distance: 181 km",
+                        "breakfast": "Enigma Lounge, Phoenix",
+                        "attraction": "San Xavier del Bac Mission, Tucson;Tucson Botanical Gardens, Tucson;",
+                        "lunch": "Punjabi Zaika, Tucson",
+                        "dinner": "Culture Club - Bar De Tapas, Tucson",
+                        "accommodation": "Cozy place to stay 7 minutes from Manhattan..., Tucson"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Tucson",
+                        "transportation": "-",
+                        "breakfast": "Culture Club - Bar De Tapas, Tucson",
+                        "attraction": "Arizona-Sonora Desert Museum, Tucson;Pima Air & Space Museum, Tucson;",
+                        "lunch": "Mood 4 Food, Tucson",
+                        "dinner": "Villa Tevere, Tucson",
+                        "accommodation": "Cozy place to stay 7 minutes from Manhattan..., Tucson"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Tucson to Grand Junction",
+                        "transportation": "Self-driving, from Tucson to Grand Junction, Duration: 10h 36m, Distance: 1,113 km",
+                        "breakfast": "Villa Tevere, Tucson",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "visitors",
+                        "is_correct": false,
+                        "error_message": "Accommodation 1 BR in Carroll Gardens Townhouse does not meet the house rule of visitors."
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 1995.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1995.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 1995.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "159": {
+        "constraint_type": "cuisine",
+        "data_idx": "159",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Islip to State College",
+                        "transportation": "Self-driving, from Islip to State College, 4 hours 52 mins, 464 km",
+                        "breakfast": "-",
+                        "attraction": "The Nittany Lion Shrine, State College;Old Main, State College;",
+                        "lunch": "Hotel Ekant, State College",
+                        "dinner": "Los Agaves, State College",
+                        "accommodation": "Beautiful, Newly Furnished, Luxury, Grand Central, State College"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "State College",
+                        "transportation": "-",
+                        "breakfast": "The Tuck Shop, State College",
+                        "attraction": "Penn State All-Sports Museum, State College;Palmer Museum of Art, State College;Millbrook Marsh Nature Center, State College;",
+                        "lunch": "Qureshi's Kabab Corner, State College",
+                        "dinner": "The Chocolate Heaven, State College",
+                        "accommodation": "LUXURY HUGE 2BR DUPLEX NEAR TRAIN - PATIO OASIS!!, State College"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from State College to Johnstown",
+                        "transportation": "Self-driving, from State College to Johnstown, 1 hour 29 mins, 137 km",
+                        "breakfast": "Rolling Beans, Johnstown",
+                        "attraction": "Johnstown Flood Museum, Johnstown;The Johnstown Inclined Plane, Johnstown;Central Park, Johnstown;",
+                        "lunch": "Souza Lobo, Johnstown",
+                        "dinner": "The National, Johnstown",
+                        "accommodation": "Modern duplex 30 minutes to Times Square, Johnstown"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Johnstown",
+                        "transportation": "-",
+                        "breakfast": "Cafe Coffee Day, Johnstown",
+                        "attraction": "Heritage Discovery Center, Johnstown;Sandyvale Memorial Gardens, Johnstown;Healing Garden Art Park, Johnstown;",
+                        "lunch": "Palmshore, Johnstown",
+                        "dinner": "Sugarama Patisserie, Johnstown",
+                        "accommodation": "Lovely Bed-Stuy Brownstone Parlor Apartment 1BR, Johnstown"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Johnstown to Islip",
+                        "transportation": "Self-driving, from Johnstown to Islip, 5 hours 57 mins, 590 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2565.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Islip to State College",
+                        "transportation": "Self-driving, from Islip to State College, 4 hours 52 mins, 464 km",
+                        "breakfast": "-",
+                        "attraction": "The Nittany Lion Shrine, State College; Old Main, State College;",
+                        "lunch": "Super Snacks (American), State College",
+                        "dinner": "Nutri Cafe (American), State College",
+                        "accommodation": "LUXURY HUGE 2BR DUPLEX NEAR TRAIN - PATIO OASIS!! (Entire home/apt), State College"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "State College",
+                        "transportation": "-",
+                        "breakfast": "Gopala (American), State College",
+                        "attraction": "Penn State All-Sports Museum, State College; Palmer Museum of Art, State College; Millbrook Marsh Nature Center, State College;",
+                        "lunch": "South Indian Cafe (American), State College",
+                        "dinner": "El Amigos Kitchen (American), State College",
+                        "accommodation": "LUXURY HUGE 2BR DUPLEX NEAR TRAIN - PATIO OASIS!! (Entire home/apt), State College"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from State College to Johnstown",
+                        "transportation": "Self-driving, from State College to Johnstown, 1 hour 29 mins, 137 km",
+                        "breakfast": "Palmshore (American), Johnstown",
+                        "attraction": "Johnstown Flood Museum, Johnstown; The Johnstown Inclined Plane, Johnstown; Central Park, Johnstown;",
+                        "lunch": "Burger Dominion (American), Johnstown",
+                        "dinner": "The Paddington (American), Johnstown",
+                        "accommodation": "Modern duplex 30 minutes to Times Square (Entire home/apt), Johnstown"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Johnstown",
+                        "transportation": "-",
+                        "breakfast": "Dolce Gelato (American), Johnstown",
+                        "attraction": "Heritage Discovery Center, Johnstown; Sandyvale Memorial Gardens, Johnstown; Healing Garden Art Park, Johnstown;",
+                        "lunch": "The Pizza Corner (American), Johnstown",
+                        "dinner": "The National (American), Johnstown",
+                        "accommodation": "Modern duplex 30 minutes to Times Square (Entire home/apt), Johnstown"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Johnstown to Islip",
+                        "transportation": "Self-driving, from Johnstown to Islip, 5 hours 57 mins, 590 km",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 2565.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 2565.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "American",
+                            11
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine American is missing 11 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "163": {
+        "constraint_type": "cuisine",
+        "data_idx": "163",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from La Crosse to Moline",
+                        "transportation": "Self-driving, from La Crosse to Moline, Departure Time: 13:10, Arrival Time: 16:44",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Zoe, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Moline",
+                        "transportation": "-",
+                        "breakfast": "Zoe, Moline",
+                        "attraction": "John Deere Pavilion, Moline;Celebration River Cruises, Moline;Sylvan Island, Moline;",
+                        "lunch": "Hucka, Moline",
+                        "dinner": "Arabian Knights, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Moline to Rockford",
+                        "transportation": "Self-driving, from Moline to Rockford, Departure Time: 13:10, Arrival Time: 15:11",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Coco Bambu, Rockford",
+                        "accommodation": "Lux 2 Bedroom NYC Apt on the Hudson River!, Rockford"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "from Rockford to Belleville",
+                        "transportation": "Self-driving, from Rockford to Belleville, Departure Time: 13:10, Arrival Time: 17:39",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Fuji Japanese Steak House, Belleville",
+                        "accommodation": "Sunny, Spacious Studio Apt in East Village, NYC, Belleville"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "Belleville",
+                        "transportation": "-",
+                        "breakfast": "Cafe Amaretto, Belleville",
+                        "attraction": "National Shrine of Our Lady of the Snows, Belleville;Belleville In Swing Mural, Belleville;St. Clair County Historical Society, Belleville;",
+                        "lunch": "RollsKing, Belleville",
+                        "dinner": "Summer Pavilion, Belleville",
+                        "accommodation": "Sunny, Spacious Studio Apt in East Village, NYC, Belleville"
+                    },
+                    {
+                        "days": 6,
+                        "current_city": "from Belleville to La Crosse",
+                        "transportation": "Self-driving, from Belleville to La Crosse, Departure Time: 13:10, Arrival Time: 20:29",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 4560.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4560.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 5,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4560.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from La Crosse to Moline",
+                        "transportation": "Self-driving, from La Crosse to Moline, Departure Time: 13:10, Arrival Time: 16:44",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Royal Hotel, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Moline",
+                        "transportation": "-",
+                        "breakfast": "Royal Hotel, Moline",
+                        "attraction": "John Deere Pavilion, Moline;Celebration River Cruises, Moline;Sylvan Island, Moline;",
+                        "lunch": "Cafe Illuminatii, Moline",
+                        "dinner": "Arabian Knights, Moline",
+                        "accommodation": "Sunny duplex near Central Park, Moline"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Moline to Rockford",
+                        "transportation": "Self-driving, from Moline to Rockford, Departure Time: 13:10, Arrival Time: 15:11",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Cafe Southall, Rockford",
+                        "accommodation": "Lux 2 Bedroom NYC Apt on the Hudson River!, Rockford"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Rockford",
+                        "transportation": "-",
+                        "breakfast": "Cafe Southall, Rockford",
+                        "attraction": "Burpee Museum of Natural History, Rockford;Discovery Center Museum, Rockford;Anderson Japanese Gardens, Rockford;",
+                        "lunch": "The Gourmet Shack, Rockford",
+                        "dinner": "Mirchievous, Rockford",
+                        "accommodation": "Lux 2 Bedroom NYC Apt on the Hudson River!, Rockford"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Rockford to Belleville",
+                        "transportation": "Self-driving, from Rockford to Belleville, Departure Time: 13:10, Arrival Time: 17:39",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "Fuji Japanese Steak House, Belleville",
+                        "accommodation": "Historic Manhattan Home to make your stay special!, Belleville"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "Belleville",
+                        "transportation": "-",
+                        "breakfast": "Fuji Japanese Steak House, Belleville",
+                        "attraction": "National Shrine of Our Lady of the Snows, Belleville;Belleville In Swing Mural, Belleville;St. Clair County Historical Society, Belleville;",
+                        "lunch": "Romi da Dhaba, Belleville",
+                        "dinner": "Summer Pavilion, Belleville",
+                        "accommodation": "Historic Manhattan Home to make your stay special!, Belleville"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Belleville to La Crosse",
+                        "transportation": "Self-driving, from Belleville to La Crosse, Departure Time: 13:10, Arrival Time: 20:29",
+                        "breakfast": "-",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "children under 10",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no flight",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 4560.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4560.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 5,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4560.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mexican",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    },
+    "164": {
+        "constraint_type": "cuisine",
+        "data_idx": "164",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Salt Lake City to San Diego",
+                        "transportation": "Flight Number: F3523821, from Salt Lake City to San Diego, Departure Time: 11:36, Arrival Time: 12:19",
+                        "breakfast": "-",
+                        "attraction": "Seaport Village, San Diego;San Diego Museum of Art, San Diego;",
+                        "lunch": "Jetha Lal Ka Dhabha, San Diego",
+                        "dinner": "Burger King, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Jetha Lal Ka Dhabha, San Diego",
+                        "attraction": "Balboa Park, San Diego;San Diego Zoo, San Diego;USS Midway Museum, San Diego;",
+                        "lunch": "Chaudhary Di Hatti, San Diego",
+                        "dinner": "Bun Intended, San Diego",
+                        "accommodation": "Luxury 4BR Home, Spacious & Central to Trains, San Diego"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from San Diego to San Luis Obispo",
+                        "transportation": "Flight Number: F3820181, from San Diego to San Luis Obispo, Departure Time: 09:59, Arrival Time: 11:02",
+                        "breakfast": "Jetha Lal Ka Dhabha, San Diego",
+                        "attraction": "Mission San Luis Obispo de Tolosa 1772, San Luis Obispo;San Luis Obispo Botanical Garden, San Luis Obispo;",
+                        "lunch": "Jerry's Burger Bar, San Luis Obispo",
+                        "dinner": "Ooma, San Luis Obispo",
+                        "accommodation": "Experiencing Tranquility in Private Home, Room # 1, San Luis Obispo"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "San Luis Obispo",
+                        "transportation": "-",
+                        "breakfast": "Jerry's Burger Bar, San Luis Obispo",
+                        "attraction": "Madonna Inn, San Luis Obispo;Mission Plaza, San Luis Obispo;Leaning Pine Arboretum, San Luis Obispo;",
+                        "lunch": "Pradeep Pav Bhaji, San Luis Obispo",
+                        "dinner": "Gaucho, San Luis Obispo",
+                        "accommodation": "Experiencing Tranquility in Private Home, Room # 1, San Luis Obispo"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from San Luis Obispo to Los Angeles",
+                        "transportation": "Flight Number: F3854130, from San Luis Obispo to Los Angeles, Departure Time: 05:53, Arrival Time: 06:55",
+                        "breakfast": "Jerry's Burger Bar, San Luis Obispo",
+                        "attraction": "Santa Monica Pier, Los Angeles;The Getty, Los Angeles;",
+                        "lunch": "Palmshore, Los Angeles",
+                        "dinner": "Elan - The Lodhi, Los Angeles",
+                        "accommodation": "Best Nest, Los Angeles"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "Los Angeles",
+                        "transportation": "-",
+                        "breakfast": "Palmshore, Los Angeles",
+                        "attraction": "Hollywood Walk of Fame, Los Angeles;Griffith Observatory, Los Angeles;Los Angeles County Museum of Art (LACMA), Los Angeles;",
+                        "lunch": "Paramjeet Machi Wala, Los Angeles",
+                        "dinner": "Heat - Edsa Shangri-La, Los Angeles",
+                        "accommodation": "Best Nest, Los Angeles"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Los Angeles to Salt Lake City",
+                        "transportation": "Flight Number: F3531258, from Los Angeles to Salt Lake City, Departure Time: 18:43, Arrival Time: 21:35",
+                        "breakfast": "Palmshore, Los Angeles",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "smoking",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": false,
+                        "error_message": "The room type should be private room."
+                    },
+                    "budget": {
+                        "query_value": 4370.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4370.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4370.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.5
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Salt Lake City to San Diego",
+                        "transportation": "Flight Number: F3523821, from Salt Lake City to San Diego, Departure Time: 11:36, Arrival Time: 12:19",
+                        "breakfast": "-",
+                        "attraction": "Seaport Village, San Diego;San Diego Museum of Art, San Diego;",
+                        "lunch": "Jetha Lal Ka Dhabha, San Diego",
+                        "dinner": "Baker King, San Diego",
+                        "accommodation": "Spacious Room in Large 2 Bedroom Prewar Apartment, San Diego"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "San Diego",
+                        "transportation": "-",
+                        "breakfast": "Baker King, San Diego",
+                        "attraction": "Balboa Park, San Diego;San Diego Zoo, San Diego;USS Midway Museum, San Diego;",
+                        "lunch": "Chaudhary Di Hatti, San Diego",
+                        "dinner": "Meraki, San Diego",
+                        "accommodation": "Spacious Room in Large 2 Bedroom Prewar Apartment, San Diego"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from San Diego to San Luis Obispo",
+                        "transportation": "Flight Number: F3820181, from San Diego to San Luis Obispo, Departure Time: 09:59, Arrival Time: 11:02",
+                        "breakfast": "Baker King, San Diego",
+                        "attraction": "Mission San Luis Obispo de Tolosa 1772, San Luis Obispo;San Luis Obispo Botanical Garden, San Luis Obispo;",
+                        "lunch": "R' ADDA, San Luis Obispo",
+                        "dinner": "Trending Eats, San Luis Obispo",
+                        "accommodation": "Sunny, Newly Renovated, Private Bushwick Room, San Luis Obispo"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "San Luis Obispo",
+                        "transportation": "-",
+                        "breakfast": "R' ADDA, San Luis Obispo",
+                        "attraction": "Madonna Inn, San Luis Obispo;Mission Plaza, San Luis Obispo;Leaning Pine Arboretum, San Luis Obispo;",
+                        "lunch": "Pradeep Pav Bhaji, San Luis Obispo",
+                        "dinner": "Gaucho, San Luis Obispo",
+                        "accommodation": "Sunny, Newly Renovated, Private Bushwick Room, San Luis Obispo"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from San Luis Obispo to Los Angeles",
+                        "transportation": "Flight Number: F3854130, from San Luis Obispo to Los Angeles, Departure Time: 05:53, Arrival Time: 06:55",
+                        "breakfast": "R' ADDA, San Luis Obispo",
+                        "attraction": "Santa Monica Pier, Los Angeles;The Getty, Los Angeles;",
+                        "lunch": "Palmshore, Los Angeles",
+                        "dinner": "Elan - The Lodhi, Los Angeles",
+                        "accommodation": "Private Room with Private Bath Upper East Side, Los Angeles"
+                    },
+                    {
+                        "days": 6,
+                        "current_city": "Los Angeles",
+                        "transportation": "-",
+                        "breakfast": "Palmshore, Los Angeles",
+                        "attraction": "Hollywood Walk of Fame, Los Angeles;Griffith Observatory, Los Angeles;Los Angeles County Museum of Art (LACMA), Los Angeles;",
+                        "lunch": "Paramjeet Machi Wala, Los Angeles",
+                        "dinner": "The Addictions, Los Angeles",
+                        "accommodation": "Private Room with Private Bath Upper East Side, Los Angeles"
+                    },
+                    {
+                        "days": 7,
+                        "current_city": "from Los Angeles to Salt Lake City",
+                        "transportation": "Flight Number: F3531258, from Los Angeles to Salt Lake City, Departure Time: 18:43, Arrival Time: 21:35",
+                        "breakfast": "Palmshore, Los Angeles",
+                        "attraction": "-",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "smoking",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "private room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 4370.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4370.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 2,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 4370.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": false,
+                        "error_message": "The cuisine Mediterranean is missing 2 occurrences."
+                    }
+                },
+                "total_pass_rate": 0.5
+            }
+        ]
+    },
+    "178": {
+        "constraint_type": "cuisine",
+        "data_idx": "178",
+        "detailed_results": [
+            {
+                "turn": 1,
+                "response": [
+                    {
+                        "days": 1,
+                        "current_city": "from Newark to Miami",
+                        "transportation": "Flight Number: F3702793, from Newark to Miami, Departure Time: 06:28, Arrival Time: 09:24",
+                        "breakfast": "-",
+                        "attraction": "P\u00e9rez Art Museum Miami, Miami;Lummus Park, Miami;",
+                        "lunch": "-",
+                        "dinner": "AB's Absolute Barbecues, Miami",
+                        "accommodation": "Simple and clean bedroom with good view and light, Miami"
+                    },
+                    {
+                        "days": 2,
+                        "current_city": "Miami",
+                        "transportation": "-",
+                        "breakfast": "AB's - Absolute Barbecues, Miami",
+                        "attraction": "Wynwood Walls, Miami;Phillip & Patricia Frost Museum of Science, Miami;",
+                        "lunch": "Clocked, Miami",
+                        "dinner": "Tako Cheena by Pom Pom, Miami",
+                        "accommodation": "Simple and clean bedroom with good view and light, Miami"
+                    },
+                    {
+                        "days": 3,
+                        "current_city": "from Miami to Punta Gorda",
+                        "transportation": "Self-driving, from Miami to Punta Gorda, Duration: 2h 41m",
+                        "breakfast": "-",
+                        "attraction": "Laishley Park, Punta Gorda;Peace River Botanical & Sculpture Gardens, Punta Gorda;",
+                        "lunch": "-",
+                        "dinner": "Pho Bac, Punta Gorda",
+                        "accommodation": "Cozy North Park Slope Apartment, Punta Gorda"
+                    },
+                    {
+                        "days": 4,
+                        "current_city": "Punta Gorda",
+                        "transportation": "-",
+                        "breakfast": "Mathura Lassi Wala, Punta Gorda",
+                        "attraction": "Charlotte Harbor Preserve State Park, Punta Gorda;Alligator Bay Distillers, Punta Gorda;",
+                        "lunch": "Railway Yard, Punta Gorda",
+                        "dinner": "Palomino, Punta Gorda",
+                        "accommodation": "Cozy North Park Slope Apartment, Punta Gorda"
+                    },
+                    {
+                        "days": 5,
+                        "current_city": "from Punta Gorda to Jacksonville",
+                        "transportation": "Self-driving, from Punta Gorda to Jacksonville, Duration: 4h 26m",
+                        "breakfast": "-",
+                        "attraction": "Jacksonville Zoo and Gardens, Jacksonville;Southbank Riverwalk, Jacksonville;",
+                        "lunch": "-",
+                        "dinner": "Oh! Fudge, Jacksonville",
+                        "accommodation": "Cute Studio near Prospect Park, Jacksonville"
+                    },
+                    {
+                        "days": 6,
+                        "current_city": "Jacksonville",
+                        "transportation": "-",
+                        "breakfast": "Goose Feathers Cafe and Bakery, Jacksonville",
+                        "attraction": "Cummer Museum of Art & Gardens, Jacksonville;Shipwreck Island Water Park, Jacksonville;",
+                        "lunch": "Villa Gargano, Jacksonville",
+                        "dinner": "San Carlo, Jacksonville",
+                        "accommodation": "Cute Studio near Prospect Park, Jacksonville"
+                    },
+                    {
+                        "days": 7,
+                        "current_city": "from Jacksonville to Newark",
+                        "transportation": "Flight Number: F4076133, from Jacksonville to Newark, Departure Time: 22:16, Arrival Time: 00:53 next day",
+                        "breakfast": "Keventers, Jacksonville",
+                        "attraction": "MOCA Jacksonville, Jacksonville;Friendship Fountain, Jacksonville;",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": false,
+                        "error_message": "The transportation should not be no self-driving."
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": false,
+                        "error_message": "The room type should be entire room."
+                    },
+                    "budget": {
+                        "query_value": 9880.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 9880.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 9880.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            },
+            {
+                "turn": 2,
+                "response": [
+                    {
+                        "day": 1,
+                        "current_city": "from Newark to Miami",
+                        "transportation": "Flight Number: F3702793, from Newark to Miami, Departure Time: 06:28, Arrival Time: 09:24",
+                        "breakfast": "-",
+                        "attraction": "P\u00e9rez Art Museum Miami, Miami;Lummus Park, Miami;",
+                        "lunch": "-",
+                        "dinner": "BarShala, Miami",
+                        "accommodation": "Simple and clean bedroom (entire), Miami"
+                    },
+                    {
+                        "day": 2,
+                        "current_city": "Miami",
+                        "transportation": "-",
+                        "breakfast": "BarShala, Miami",
+                        "attraction": "Wynwood Walls, Miami;Frost Museum of Science, Miami;",
+                        "lunch": "Clocked, Miami",
+                        "dinner": "Tako Cheena by Pom Pom, Miami",
+                        "accommodation": "Simple and clean bedroom (entire), Miami"
+                    },
+                    {
+                        "day": 3,
+                        "current_city": "from Miami to Punta Gorda",
+                        "transportation": "Taxi, from Miami to Punta Gorda, Cost: 291, Duration: 2h 41m",
+                        "breakfast": "-",
+                        "attraction": "Laishley Park, Punta Gorda;Peace River Gardens, Punta Gorda;",
+                        "lunch": "Railway Yard, Punta Gorda",
+                        "dinner": "Palomino, Punta Gorda",
+                        "accommodation": "Cozy North Park Slope Apartment (entire), Punta Gorda"
+                    },
+                    {
+                        "day": 4,
+                        "current_city": "Punta Gorda",
+                        "transportation": "-",
+                        "breakfast": "Mathura Lassi Wala, Punta Gorda",
+                        "attraction": "Charlotte Harbor Preserve, Punta Gorda;Alligator Bay Distillers, Punta Gorda;",
+                        "lunch": "Palomino, Punta Gorda",
+                        "dinner": "El Cartel, Punta Gorda",
+                        "accommodation": "Cozy North Park Slope Apartment (entire), Punta Gorda"
+                    },
+                    {
+                        "day": 5,
+                        "current_city": "from Punta Gorda to Jacksonville",
+                        "transportation": "Taxi, from Punta Gorda to Jacksonville, Cost: 474, Duration: 4h 26m",
+                        "breakfast": "-",
+                        "attraction": "Jacksonville Zoo, Jacksonville;Southbank Riverwalk, Jacksonville;",
+                        "lunch": "Pash!, Jacksonville",
+                        "dinner": "San Carlo, Jacksonville",
+                        "accommodation": "Cute Studio near Prospect Park (entire), Jacksonville"
+                    },
+                    {
+                        "day": 6,
+                        "current_city": "Jacksonville",
+                        "transportation": "-",
+                        "breakfast": "Keventers, Jacksonville",
+                        "attraction": "Cummer Museum, Jacksonville;Shipwreck Island Water Park, Jacksonville;",
+                        "lunch": "Villa Gargano, Jacksonville",
+                        "dinner": "Secular House Canteen, Jacksonville",
+                        "accommodation": "Cute Studio near Prospect Park (entire), Jacksonville"
+                    },
+                    {
+                        "day": 7,
+                        "current_city": "from Jacksonville to Newark",
+                        "transportation": "Flight Number: F4076133, from Jacksonville to Newark, Departure Time: 22:16, Arrival Time: 00:53",
+                        "breakfast": "-",
+                        "attraction": "MOCA Jacksonville, Jacksonville;Friendship Fountain, Jacksonville;",
+                        "lunch": "-",
+                        "dinner": "-",
+                        "accommodation": "-"
+                    }
+                ],
+                "constraint_scores": {
+                    "cuisine": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "room_rule": {
+                        "query_value": "parties",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "transportation": {
+                        "query_value": "no self-driving",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "room_type": {
+                        "query_value": "entire room",
+                        "is_correct": true,
+                        "error_message": null
+                    },
+                    "budget": {
+                        "query_value": 9880.0,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 9880.0."
+                    },
+                    "ratings": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "people_number": {
+                        "query_value": 3,
+                        "is_correct": false,
+                        "error_message": "The total cost exceeds the budget of 9880.0."
+                    },
+                    "rating_pref": {
+                        "query_value": null,
+                        "is_correct": null,
+                        "error_message": null
+                    },
+                    "cuisine_pref": {
+                        "query_value": [
+                            "Mediterranean",
+                            2
+                        ],
+                        "is_correct": true,
+                        "error_message": null
+                    }
+                },
+                "total_pass_rate": 0.6666666666666666
+            }
+        ]
+    }
+}

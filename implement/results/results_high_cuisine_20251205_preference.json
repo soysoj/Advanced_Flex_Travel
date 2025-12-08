@@ -1,0 +1,189 @@
+{
+    "21": {
+        "data_idx": "21",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "27": {
+        "data_idx": "27",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "39": {
+        "data_idx": "39",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "40": {
+        "data_idx": "40",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "43": {
+        "data_idx": "43",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "72": {
+        "data_idx": "72",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "74": {
+        "data_idx": "74",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "83": {
+        "data_idx": "83",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "91": {
+        "data_idx": "91",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "123": {
+        "data_idx": "123",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "126": {
+        "data_idx": "126",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "136": {
+        "data_idx": "136",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "138": {
+        "data_idx": "138",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "146": {
+        "data_idx": "146",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "163": {
+        "data_idx": "163",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "164": {
+        "data_idx": "164",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable",
+                "total_pass_rate": null
+            }
+        ]
+    },
+    "178": {
+        "data_idx": "178",
+        "constraint_type": "cuisine",
+        "detailed_results": [
+            {
+                "response": null,
+                "constraint_scores": "error: 'Runner' object has no attribute 'ref_data'",
+                "total_pass_rate": null
+            }
+        ]
+    }
+}

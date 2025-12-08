@@ -1,0 +1,2888 @@
+{
+    "61": [
+        {
+            "data_idx": 61,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "63": [
+        {
+            "data_idx": 63,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "65": [
+        {
+            "data_idx": 65,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "68": [
+        {
+            "data_idx": 68,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "72": [
+        {
+            "data_idx": 72,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "76": [
+        {
+            "data_idx": 76,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "77": [
+        {
+            "data_idx": 77,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "78": [
+        {
+            "data_idx": 78,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "79": [
+        {
+            "data_idx": 79,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "83": [
+        {
+            "data_idx": 83,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "85": [
+        {
+            "data_idx": 85,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "89": [
+        {
+            "data_idx": 89,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "90": [
+        {
+            "data_idx": 90,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "91": [
+        {
+            "data_idx": 91,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "99": [
+        {
+            "data_idx": 99,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "103": [
+        {
+            "data_idx": 103,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "113": [
+        {
+            "data_idx": 113,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "116": [
+        {
+            "data_idx": 116,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "120": [
+        {
+            "data_idx": 120,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 120,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 120,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "121": [
+        {
+            "data_idx": 121,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 121,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "122": [
+        {
+            "data_idx": 122,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 122,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "123": [
+        {
+            "data_idx": 123,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 123,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "124": [
+        {
+            "data_idx": 124,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 124,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 124,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "125": [
+        {
+            "data_idx": 125,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 125,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "126": [
+        {
+            "data_idx": 126,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 126,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "132": [
+        {
+            "data_idx": 132,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 132,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "133": [
+        {
+            "data_idx": 133,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 133,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "135": [
+        {
+            "data_idx": 135,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 135,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "136": [
+        {
+            "data_idx": 136,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 136,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "137": [
+        {
+            "data_idx": 137,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 137,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 137,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "138": [
+        {
+            "data_idx": 138,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 138,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "140": [
+        {
+            "data_idx": 140,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 140,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 140,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "141": [
+        {
+            "data_idx": 141,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 141,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 141,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "142": [
+        {
+            "data_idx": 142,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 142,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "143": [
+        {
+            "data_idx": 143,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 143,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "144": [
+        {
+            "data_idx": 144,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 144,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "145": [
+        {
+            "data_idx": 145,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 145,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "146": [
+        {
+            "data_idx": 146,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 146,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "147": [
+        {
+            "data_idx": 147,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 147,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "148": [
+        {
+            "data_idx": 148,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 148,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 148,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "150": [
+        {
+            "data_idx": 150,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 150,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "152": [
+        {
+            "data_idx": 152,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 152,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "153": [
+        {
+            "data_idx": 153,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 153,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "154": [
+        {
+            "data_idx": 154,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 154,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "155": [
+        {
+            "data_idx": 155,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 155,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "158": [
+        {
+            "data_idx": 158,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 158,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "159": [
+        {
+            "data_idx": 159,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 159,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "161": [
+        {
+            "data_idx": 161,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 161,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "162": [
+        {
+            "data_idx": 162,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 162,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "163": [
+        {
+            "data_idx": 163,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 163,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "164": [
+        {
+            "data_idx": 164,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 164,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "165": [
+        {
+            "data_idx": 165,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 165,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "166": [
+        {
+            "data_idx": 166,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 166,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "167": [
+        {
+            "data_idx": 167,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 167,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 167,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "169": [
+        {
+            "data_idx": 169,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 169,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "170": [
+        {
+            "data_idx": 170,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 170,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "171": [
+        {
+            "data_idx": 171,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 171,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "172": [
+        {
+            "data_idx": 172,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 172,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "173": [
+        {
+            "data_idx": 173,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 173,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "174": [
+        {
+            "data_idx": 174,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 174,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "175": [
+        {
+            "data_idx": 175,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 175,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "177": [
+        {
+            "data_idx": 177,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 177,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 177,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "178": [
+        {
+            "data_idx": 178,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 178,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "179": [
+        {
+            "data_idx": 179,
+            "constraint_type": [
+                "budget",
+                "room type"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 179,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 179,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "60": [
+        {
+            "data_idx": 60,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "66": [
+        {
+            "data_idx": 66,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "71": [
+        {
+            "data_idx": 71,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "74": [
+        {
+            "data_idx": 74,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "75": [
+        {
+            "data_idx": 75,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "84": [
+        {
+            "data_idx": 84,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "86": [
+        {
+            "data_idx": 86,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "88": [
+        {
+            "data_idx": 88,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "96": [
+        {
+            "data_idx": 96,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "97": [
+        {
+            "data_idx": 97,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "98": [
+        {
+            "data_idx": 98,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "102": [
+        {
+            "data_idx": 102,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "106": [
+        {
+            "data_idx": 106,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "107": [
+        {
+            "data_idx": 107,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "110": [
+        {
+            "data_idx": 110,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "111": [
+        {
+            "data_idx": 111,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "112": [
+        {
+            "data_idx": 112,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "114": [
+        {
+            "data_idx": 114,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "115": [
+        {
+            "data_idx": 115,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "118": [
+        {
+            "data_idx": 118,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "127": [
+        {
+            "data_idx": 127,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 127,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "128": [
+        {
+            "data_idx": 128,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 128,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "129": [
+        {
+            "data_idx": 129,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 129,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "130": [
+        {
+            "data_idx": 130,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 130,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "131": [
+        {
+            "data_idx": 131,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 131,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "134": [
+        {
+            "data_idx": 134,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 134,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "139": [
+        {
+            "data_idx": 139,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 139,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "149": [
+        {
+            "data_idx": 149,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 149,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "151": [
+        {
+            "data_idx": 151,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 151,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "156": [
+        {
+            "data_idx": 156,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 156,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "157": [
+        {
+            "data_idx": 157,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 157,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "160": [
+        {
+            "data_idx": 160,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 160,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "168": [
+        {
+            "data_idx": 168,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: up_3kKbd********************wLCE. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 168,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "176": [
+        {
+            "data_idx": 176,
+            "constraint_type": [
+                "budget",
+                "house rule"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        },
+        {
+            "data_idx": 176,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "62": [
+        {
+            "data_idx": 62,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "64": [
+        {
+            "data_idx": 64,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "67": [
+        {
+            "data_idx": 67,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "69": [
+        {
+            "data_idx": 69,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "70": [
+        {
+            "data_idx": 70,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: 'Evaluator' object has no attribute 'constraint_ranks'",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "73": [
+        {
+            "data_idx": 73,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "80": [
+        {
+            "data_idx": 80,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "81": [
+        {
+            "data_idx": 81,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "82": [
+        {
+            "data_idx": 82,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "87": [
+        {
+            "data_idx": 87,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "92": [
+        {
+            "data_idx": 92,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "93": [
+        {
+            "data_idx": 93,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "94": [
+        {
+            "data_idx": 94,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "95": [
+        {
+            "data_idx": 95,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "100": [
+        {
+            "data_idx": 100,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "101": [
+        {
+            "data_idx": 101,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "104": [
+        {
+            "data_idx": 104,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "105": [
+        {
+            "data_idx": 105,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "108": [
+        {
+            "data_idx": 108,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "109": [
+        {
+            "data_idx": 109,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "117": [
+        {
+            "data_idx": 117,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ],
+    "119": [
+        {
+            "data_idx": 119,
+            "constraint_type": [
+                "budget",
+                "cuisine"
+            ],
+            "detailed_results": [
+                {
+                    "response": null,
+                    "constraint_scores": "error: Error code: 400 - {'error': {'message': 'The requested model is invalid or no longer supported. You can find the list of available models on our models page at https://console.upstage.ai/docs/models.', 'type': 'invalid_request_error', 'param': '', 'code': 'invalid_request_body'}}",
+                    "total_pass_rate": null
+                }
+            ]
+        }
+    ]
+}
