@@ -104,9 +104,9 @@ MODEL_PATHS = {
 }
 
 def inference_gpt(model_name, prompt):
-    client = OpenAI(base_url="https://api.upstage.ai/v1")
+    client = OpenAI() # base_url="https://api.upstage.ai/v1"
     completion = client.chat.completions.create(
-        model= 'solar-pro2', #model_name,    # 예: "gpt-4o" 혹은 "gpt-4o-mini"
+        model= model_name,    # 예: "gpt-4o" 혹은 "gpt-4o-mini"
         messages=[
             {
                 "role": "user",

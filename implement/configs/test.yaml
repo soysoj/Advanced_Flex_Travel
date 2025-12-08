@@ -6,7 +6,7 @@ evaluator:
   instructions: 
 
 evaluatee:
-  model: 'solar-pro2' # "gpt-4o"
+  model: "gpt-4o"  #'solar-pro2'
   instructions: |
     Please answer the following questions to the best of your ability. 
     You will be evaluated based on your responses. 
